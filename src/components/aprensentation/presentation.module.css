@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   height: 480px;
-  background-color: rgb(237, 239, 244);
+  background-color: #f7f1f1;
   margin-top: 15px;
 }
 
@@ -17,7 +17,6 @@
   flex-grow: 1;
 }
 .imgson {
-  width: ;
   height: 100%;
   object-fit: cover;
   background-image: url(/images/imagleft.png); /* Caminho para a imagem */
@@ -28,6 +27,7 @@
 .presentation {
   margin-left: 30%; /* Para compensar o espaço ocupado pela .imgleft */
   z-index: 0; /* Para garantir que fique acima de .linksright */
+  overflow: hidden;
 }
 .presentation h1,
 .presentation h2 {
@@ -74,7 +74,7 @@
 
   .presentation {
     margin-left: -75px; /* Removendo a margem esquerda anterior */
-    width: 100%; /* Definindo a largura como 100% para ocupar toda a largura disponível */
+    width: 100%;
   }
 
   .presentation h1,
@@ -85,6 +85,7 @@
     margin-top: 0; /* Removendo a margem superior anterior */
     margin-bottom: 0; /* Removendo a margem inferior anterior */
     margin-right: 10px;
+    margin-left: 40px;
   }
   .linksrightson {
     display: flex;

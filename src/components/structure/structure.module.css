@@ -65,7 +65,7 @@
 
 @media (max-width: 800px) {
   .structure {
-    margin: 10px;
+    margin: 1px;
     width: 100%;
     display: flex;
     flex-direction: column;

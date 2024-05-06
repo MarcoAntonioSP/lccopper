@@ -1,8 +1,7 @@
 .apstructurest {
   width: 95%;
-  margin: 0 auto;
   font-family: Arial, sans-serif;
-  text-align: left;
+  text-align: center;
 }
 
 .apstructurest h1 {
@@ -22,9 +21,10 @@
     max-width: 100vh;
     margin: 15px;
     text-align: center;
+    margin-top: 125px;
   }
   .apstructurest h2 {
     font-size: 15px;
-    text-align: left;
+    text-align: center;
   }
 }

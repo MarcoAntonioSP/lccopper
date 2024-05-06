@@ -7,7 +7,7 @@ export default function Apresentationstructure() {
         <br />A EMPRESA
       </h1>
       <h2>
-        A LC Copper é uma empresa especializada na oferta abrangente de uma
+        Aa LC Copper é uma empresa especializada na oferta abrangente de uma
         vasta gama de produtos e serviços voltados para o setor de soldagem e
         automação industrial. Nosso portfólio inclui uma variedade de itens
         essenciais, como Eletrodos, Porta Eletrodos, Braços, Cabos de Solda,
