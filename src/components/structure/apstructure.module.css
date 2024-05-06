@@ -1,0 +1,30 @@
+.apstructurest {
+  width: 95%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.apstructurest h1 {
+  color: #3d2020;
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.apstructurest h2 {
+  color: #3d2020;
+}
+
+@media (max-width: 800px) {
+  .apstructurest {
+    font-stretch:;
+    max-width: 100vh;
+    margin: 15px;
+    text-align: center;
+  }
+  .apstructurest h2 {
+    font-size: 15px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "pages/produtos.js", "pages/quemsomos.js", "pages/nossosclientes.js", "pages/vantagens.js", "pages/eletrodos.js", "pages/portaeletrodos.js", "pages/pinos.js", "pages/bracos.js", "pages/discos.js", "pages/shunts.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

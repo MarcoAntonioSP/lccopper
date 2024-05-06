@@ -1,0 +1,41 @@
+.footer {
+  height: auto; /* Ajusta altura automaticamente */
+  display: flex;
+  align-items: flex-start; /* Alinha no topo */
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 45px;
+  margin-top: 20px;
+  background-color: #00000825;
+  color: #350808;
+}
+
+.contactInfo,
+.contatphone {
+  flex: 1; /* Permite que cada coluna ocupe espaço igual */
+  margin: 10px;
+}
+
+.contactInfo h3 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #fdc236;
+}
+
+.contactInfo p,
+.contatphone p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.contatphone p a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+  }
+}

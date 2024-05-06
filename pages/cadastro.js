@@ -9,6 +9,8 @@ import styles from '../styles/Cadastro.module.css'
 import LoginCard from '../src/components/cards/loginCard/login'
 import Input from '../src/components/forms/input/input'
 import Button from '../src/components/forms/button/button'
+import Header from '../src/components/header/Header'
+import Footer from '../src/components/footer/Footer'
 
 export default function CadastroPage() {
   const [form, setForm] = useState({
@@ -52,6 +54,7 @@ export default function CadastroPage() {
 
   return (
     <div className={styles.background}>
+      <Header />
       <LoginCard title="Crie sua conta">
         <form className={styles.form}>
           <Input type="text" placeholder="Seu nome" value={form['name']} onChange={(event) => handleChangeForm(event, 'name')} />
@@ -62,6 +65,7 @@ export default function CadastroPage() {
           <Link href="/login">Já possui uma conta?</Link>
         </form>
       </LoginCard>
+      <Footer />
     </div>
   )
 }

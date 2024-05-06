@@ -1,0 +1,90 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+  background-color: cadetblue;
+  overflow: hidden;
+  background-image: url(/bannerhome01.jpeg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.textContainer {
+  background-color: rgba(2, 19, 19, 0.354);
+  width: 100vw;
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  white-space: nowrap;
+  color: #003b8c;
+  margin-top: 445px;
+  overflow: hidden;
+}
+
+.animatedText {
+  animation: scrollText 10s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  margin-top: 130px;
+}
+
+.button {
+  margin-top: 50px;
+  margin: 40px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+}
+
+.button2 {
+  background-color: yellow;
+  color: black;
+  padding: 10px 27px;
+}
+
+.button:hover {
+  background-color: rgb(173, 144, 13);
+}
+
+@media (max-width: 700px) {
+  .textContainer {
+    margin-right: 0px;
+  }
+  .banner {
+    height: 500px;
+    max-width: 100%;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 150px;
+  }
+
+  .button {
+    margin: 10px;
+  }
+}

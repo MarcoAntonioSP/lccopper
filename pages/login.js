@@ -9,6 +9,8 @@ import styles from '../styles/Login.module.css'
 import LoginCard from '../src/components/cards/loginCard/login'
 import Input from '../src/components/forms/input/input'
 import Button from '../src/components/forms/button/button'
+import Header from '../src/components/header/Header'
+import Footer from '../src/components/footer/Footer'
 
 export default function LoginPage() {
   const [form, setForm] = useState({
@@ -50,6 +52,7 @@ export default function LoginPage() {
 
   return (
     <div className={styles.background}>
+      <Header />
       <LoginCard title="Faça seu login">
         <form className={styles.form}>
           <Input type="e-mail" placeholder="Seu e-mail" value={form['email']} onChange={(event) => handleChangeForm(event, 'email')} />
@@ -59,6 +62,7 @@ export default function LoginPage() {
           <Link href="/cadastro">Não possui uma conta?</Link>
         </form>
       </LoginCard>
+      <Footer />
     </div>
   )
 }

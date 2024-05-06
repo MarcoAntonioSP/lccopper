@@ -1,0 +1,80 @@
+.structuretext {
+  height: 299px;
+}
+
+.structure {
+  display: flex;
+  height: 550px;
+  align-items: space-between;
+}
+
+.sontwoboxshadow {
+  margin-bottom: 10px;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 0px 0px #fdcf01;
+}
+.sontwo {
+  width: 33%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  background-color: #658d5700;
+  margin: 10px 30px 5px 30px;
+}
+
+.sontree {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  justify-content: center;
+  height: 44%;
+  background-color: #0000ff00;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.sontreemidle {
+  height: 12%;
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdcf01;
+  margin-bottom: 4p x;
+}
+.imag1 {
+  background-image: url(/images/area01.png);
+  background-size: cover; /* Para ajustar a imagem ao tamanho da div */
+  background-position: center; /* Para centralizar a imagem na div */
+}
+.imag2 {
+  background-image: url(/images/fundicaoim.png);
+  background-size: cover; /* Para ajustar a imagem ao tamanho da div */
+  background-position: center; /* Para centralizar a imagem na div */
+}
+.imag3 {
+  background-image: url(/images/area2.png);
+  background-size: cover; /* Para ajustar a imagem ao tamanho da div */
+  background-position: center; /* Para centralizar a imagem na div */
+}
+
+@media (max-width: 800px) {
+  .structure {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1150px;
+  }
+
+  .sontwo {
+    margin: 5px;
+    width: 90%;
+  }
+}
