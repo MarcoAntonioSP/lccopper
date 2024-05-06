@@ -12,7 +12,7 @@ export default function Bracos() {
         </div>
         <div className={styles.imgandtext}>
           <div className={styles.imgprod}>
-            <img src="/bracosepincas/braco2.jpg" alt="eletrodo" />
+            <img src="/bracosepincas/braco01.jpg" alt="braco de robo" />
           </div>
           <div className={styles.textprod}>
             <h1>
@@ -46,7 +46,7 @@ export default function Bracos() {
         </div>
         <div className={styles.imgandtext}>
           <div className={styles.imgprod}>
-            <img src="/bracosepincas/pinça.jpg" alt="eletrodo" />
+            <img src="/bracosepincas/braco02.png" alt="eletrodo" />
           </div>
           <div className={styles.textprod}>
             <h1> Precisão milimétrica:</h1>

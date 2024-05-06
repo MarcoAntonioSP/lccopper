@@ -56,7 +56,7 @@ export default function ProdBanner () {
           <a href="bracos">
             {" "}
             <Image
-              src="/bracosepincas/braco01.png"
+              src="/bracosepincas/braco01.jpg"
               alt="Product 4"
               layout="fill"
               objectFit="cover"
