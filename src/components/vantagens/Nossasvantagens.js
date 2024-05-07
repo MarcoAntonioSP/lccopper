@@ -5,7 +5,7 @@ export default function Nossasvantagens() {
     <div className={styles.container}>
       <section className={styles.section}>
         <h2 className={styles.title}>
-          LC Copper Metalúrgica LTDA: Sua Parceira em Soluções de Soldagem por
+          LC Copper Metalúrgica Eireli: Sua Parceira em Soluções de Soldagem por
           Resistência
         </h2>
         <p className={styles.paragraph}>
@@ -42,6 +42,10 @@ export default function Nossasvantagens() {
         <ul className={styles.productList}>
           <li>Barras cilíndricas e forjadas</li>
           <li>Pinças de Solda</li>
+          <li>Porta eletrodos</li>
+          <li>Discos</li>
+          <li>Braços de robo</li>
+          <li>Shunts</li>
           {/* ... adicionar o resto da lista de produtos ... */}
         </ul>
       </section>

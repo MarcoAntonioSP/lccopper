@@ -20,7 +20,7 @@ export default function Header() {
               <Link href="/produtos">Produtos</Link>
             </li>
             <li>
-              <a href="#">Contato</a>
+              <a href="/contato">Contato</a>
             </li>
             <li>
               <a href="/quemsomos">Quem somos</a>
