@@ -90,7 +90,7 @@
   .presentation h1,
   .presentation h2 {
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
     position: relative;
     width: 100%; /* Adicionando um espaçamento à direita */ /* Removendo a margem superior anterior */
     margin-bottom: 0; /* Removendo a margem inferior anterior */
@@ -110,6 +110,6 @@
   }
   .linksrightson h3 {
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
   }
 }
