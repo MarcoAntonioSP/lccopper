@@ -34,8 +34,26 @@
   text-decoration: none;
 }
 
+.link {
+  border: 1px solid #8a2be2;
+  padding: 5px 10px;
+  background-color: #8a2be2;
+  color: white;
+  border-radius: 15px;
+  background-color:;
+  text-align: center;
+}
 @media (max-width: 800px) {
   .footer {
     flex-direction: column;
+    padding: 1px;
+    padding-left: 15px;
+    margin-top: 1px;
+  }
+  .contatphone {
+    margin: 1px;
+  }
+  .link {
+    margin-left: 42%;
   }
 }

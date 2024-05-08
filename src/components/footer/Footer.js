@@ -31,7 +31,9 @@ const Footer = () => {
           <a href="http://www.lccopper.com.br">http://www.lccopper.com.br</a>
         </p>
         <br /> <br /> <br />
-        <Link href="/">inicio</Link>
+        <a href="/" className={styles.link}>
+          Início
+        </a>
       </div>
     </footer>
   );
