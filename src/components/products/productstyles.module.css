@@ -24,6 +24,7 @@
   padding: 20px;
   margin-bottom: 15px;
   background-color: #0000002f;
+  border-radius: 15px;
 }
 
 .imgandtext {
@@ -71,8 +72,10 @@
   .title {
     width: 100%;
     padding: 20px;
+    font-size: 10px;
     margin-bottom: 15px;
     background-color: #0000002f;
+    border-radius: 10px;
   }
   .imgandtext {
     flex-direction: column;
@@ -86,11 +89,12 @@
   }
 
   .textprod {
-    width: 60%;
+    width: 100%;
     height: auto;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 10px;
     object-fit: cover;
-    margin: 50px;
-    padding: 20px;
     overflow: hidden;
     background-color: #0000005c;
     border-radius: 10px;
