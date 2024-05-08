@@ -4,11 +4,7 @@ export default function QuemSomos() {
   return (
     <div className={styles.container}>
       <section className={styles.section}>
-        <h2 className={styles.title}>LC COPPER</h2>
-        <p className={styles.paragraph}>
-          Missão; Visão; Valores; Política; Objetivos e Metas da Gestão para
-          Qualidade.
-        </p>
+        <h2 className={styles.title}> Estrutura organizacional</h2>
       </section>
 
       <section className={styles.section}>
