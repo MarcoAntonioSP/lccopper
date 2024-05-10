@@ -4,12 +4,13 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  margin: 15px 0;
+  margin: 1px 0;
   background-image: url(/productsback3.jpg);
   background-size: cover;
   height: auto;
   color: rgb(255, 255, 255);
   box-shadow: 2px 2px 3px #0e01018e;
+  margin-top: 150px;
 }
 
 .texttop {
@@ -42,6 +43,7 @@
   object-fit: cover;
   overflow: hidden;
   border-radius: 15px;
+  margin-bottom: 300px;
 }
 
 .imgprod img {
@@ -86,6 +88,7 @@
   .imgprod {
     width: 70%;
     height: 70%;
+    margin-bottom: 10px;
   }
 
   .textprod {

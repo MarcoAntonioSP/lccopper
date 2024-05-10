@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./prodbanner.module.css";
 import Image from "next/image";
 
-export default function ProdBanner () {
+export default function ProdBanner() {
   return (
     <h1 className={styles.catalogTitle}>
       Catálogo
@@ -75,7 +75,8 @@ export default function ProdBanner () {
               alt="Product 5"
               layout="fill"
               objectFit="cover"
-            />{""}
+            />
+            {""}
           </a>
           <div className={styles.productInfo}>
             <h3>Discos</h3>
