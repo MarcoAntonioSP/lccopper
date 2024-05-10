@@ -4,30 +4,36 @@
   align-items: center;
   width: 100vw;
   height: 80vh;
-  background-color: cadetblue;
   overflow: hidden;
   background-image: url(/bannerhome01.jpeg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  margin-top: 190px;
+  margin-bottom: 60px;
 }
 
 .textContainer {
-  background-color: rgba(2, 19, 19, 0.354);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(104, 104, 104, 0.333);
   width: 100vw;
   margin-right: 20px;
   font-size: 30px;
+  margin-top: 450px;
+  height: 40px;
   font-weight: bold;
   position: absolute;
   white-space: nowrap;
   color: #003b8c;
-  margin-top: 445px;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 
 .animatedText {
   animation: scrollText 10s linear infinite;
-  white-space: nowrap;
+  white-space: inherit;
 }
 
 @keyframes scrollText {
@@ -35,7 +41,7 @@
     transform: translateX(100vw);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
@@ -86,5 +92,12 @@
 
   .button {
     margin: 10px;
+  }
+
+  .textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 560px;
   }
 }

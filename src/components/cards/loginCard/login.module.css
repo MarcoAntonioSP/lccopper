@@ -1,8 +1,10 @@
 .card {
-  background-color: #FFF;
+  background-color: #fff;
   width: 400px;
   padding: 20px;
   border-radius: 10px;
+  margin-top: 150px;
+  margin-bottom: 50px;
 }
 
 .title {
