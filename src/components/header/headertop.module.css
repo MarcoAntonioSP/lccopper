@@ -1,34 +1,16 @@
 .header {
   width: 100vw;
-  height: 180px;
+  height: 95px; /* Altura fixa de 95px */
   background-color: #ffffff;
-  margin-bottom: 10px;
-  zoom: 1;
-  transition:
-    background-color 0.3s ease,
-    height 0.3s ease; /* Transição suave */
-}
-
-.header.scrolled {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: fixed;
-  top: -25px;
+  position: fixed; /* Fixar o menu no topo */
+  top: 0;
   left: 0;
-  background-color: rgba(43, 41, 41, 0.8); /* Levemente transparente */
-  height: 100px;
-  z-index: 10; /* Posiciona sobre outros elementos */
-}
-.header.scrolled .menu li a {
-  padding: 10px 10px 1px 10px;
-  margin: 5px;
-  color: rgb(8, 1, 1); /* Texto branco quando rolado */
-  background-color: #dada09;
+  z-index: 100; /* Garantir que o menu fique acima de outros elementos */
+  transition: height 0.3s ease;
 }
 
-.header.scrolled .logoheader {
-  display: none;
+.scrolled {
+  height: 70px; /* Altura reduzida quando a tela é rolada */
 }
 
 .linetop {
@@ -36,7 +18,6 @@
   height: 15px;
   width: 100%;
   background-color: #0000ff;
-  margin-bottom: 10px;
 }
 
 .logoandnav {
@@ -44,16 +25,30 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  height: 100%;
 }
 
-.logoheader {
-  margin-top: 20px;
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  transition: height 0.3s ease;
+}
+
+.scrolled .logo {
+  height: 35px; /* Logo menor quando a tela é rolada */
+}
+
+.favicon {
+  height: 40px;
 }
 
 .menu {
   display: flex;
   align-items: center;
-  margin-top: 10px;
   color: black;
 }
 
@@ -69,67 +64,61 @@
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  transition: background-color 0.5s ease; /* Transição suave */
+  transition: background-color 0.5s ease;
   border-radius: 5px;
 }
 
 .menu li:last-child a {
-  background-color: #dada09; /* Último botão na cor amarela */
-  color: #333; /* Cor do texto para o botão amarelo */
-  padding: 10px 45px 10px 45px;
+  background-color: #dada09;
+  color: #333;
+  padding: 10px 45px;
 }
 
 .menu li a:hover {
-  background-color: #dada09; /* Cor de fundo ao passar o mouse */
-  color: #555; /* Cor do texto ao passar o mouse */
+  background-color: #dada09;
+  color: #555;
 }
 
 @media (max-width: 900px) {
-  .header.scrolled {
-    position: fixed;
-    top: -25px;
-    left: 0;
-    background-color: rgba(43, 41, 41, 0.8); /* Levemente transparente */
-    height: 100px;
-    z-index: 10; /* Posiciona sobre outros elementos */
-  }
-  .header.scrolled .menu li a {
-    padding: 10px 10px 10px 10px;
-    margin: 5px;
-    color: rgb(8, 1, 1); /* Texto branco quando rolado */
-    background-color: #dada09;
-  }
   .logoandnav {
     flex-direction: column;
+    height: 1px;
   }
-  .linetop {
+
+  .favicon {
+    height: 30px;
     display: flex;
-    height: 15px;
-    width: 100%;
-    background-color: #0000ff;
-    margin-bottom: 10px;
   }
 
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 180px;
-    margin-bottom: 10px;
+    padding-bottom: 85px;
+    background-color: white;
   }
-  .ul {
-    margin-right: 100px;
-  }
-  .menu li:last-child a {
-    background-color: yellow; /* Último botão na cor amarela */
-    color: #333; /* Cor do texto para o botão amarelo */
-    padding: 7px 25px 7px 25px;
-  }
+
   .menu li a {
     font-size: 12px;
     padding: 5px;
     margin: 5px;
   }
-}
-.menu li a::hover {
+
+  .menu li:last-child a {
+    padding: 3px 5px;
+  }
+
+  .logo {
+    height: 40px;
+    transition: height 0.3s ease;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  .menu li a:hover {
+    background-color: inherit;
+  }
 }

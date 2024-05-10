@@ -15,32 +15,40 @@ export default function Header() {
 
   return (
     <div className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
-      <div className={styles.linetop}></div>
+      {/* A div linetop será removida quando a tela for rolada */}
+      {!isScrolled && <div className={styles.linetop}></div>}
 
       <div className={styles.logoandnav}>
-        {!isScrolled && (
-          <div className={styles.logoheader}>
-            <a href="/">
-              <img src="./images/logoheader.png" alt="logo" />
-            </a>
-          </div>
-        )}
+        <div className={styles.logoContainer}>
+          {/* Exibição condicional do logo ou favicon */}
+          {!isScrolled ? (
+            <img
+              src="./images/logoheader.png"
+              alt="logo"
+              className={styles.logo}
+            />
+          ) : (
+            <Link href="/">
+              <img src="/favicon.ico" alt="logo" className={styles.favicon} />
+            </Link>
+          )}
+        </div>
         <nav className={`${styles.menu} ${styles.responsiveMenu}`}>
           <ul>
             <li>
-              <a href="/">Inicio</a>
+              <Link href="/">Inicio</Link>
             </li>
             <li>
               <Link href="/produtos">Produtos</Link>
             </li>
             <li>
-              <a href="/contato">Contato</a>
+              <Link href="/contato">Contato</Link>
             </li>
             <li>
-              <a href="/quemsomos">Quem somos</a>
+              <Link href="/quemsomos">Quem somos</Link>
             </li>
             <li>
-              <a href="/login">Trabalhe conosco</a>
+              <Link href="/login">Trabalhe conosco</Link>
             </li>
           </ul>
         </nav>
