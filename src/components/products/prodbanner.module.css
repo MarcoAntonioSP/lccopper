@@ -1,9 +1,9 @@
 .catalogTitle {
   font-size: 35px;
   margin-bottom: 20px;
-  margin-top: 30px;
-  padding:-150px;
-  text-align:center;
+  margin-top: 230px;
+  padding: -150px;
+  text-align: center;
 }
 .containerprod {
   display: flex;
@@ -16,12 +16,11 @@
   padding: 10px;
 }
 
-.productbox { 
-  background-color: yellow;
+.productbox {
   padding: 10px;
-  overflow: hidden ;
+  overflow: hidden;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px rgba(0  , 0, 0, 0.4);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   margin: 10px;
   flex: 0 0 calc(30% - 20px); /* Usando flex para garantir que os elementos ocupem espaço igualmente e com uma margem entre eles */
   position: relative; /* Para o Image e productInfo */
@@ -29,13 +28,13 @@
 
 .productbox:hover {
   transform: scale(1.1); /* Aumenta a escala da imagem em 20% */
-  box-shadow: 3px 3px 1px rgba(0  , 0, 0, 0.3);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
 .productInfo {
   position: absolute;
-  font-size:15px;
+  font-size: 15px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -44,18 +43,17 @@
   padding: 10px;
 }
 
-
 @media (max-width: 768px) {
   .productbox {
     height: 160px;
     flex-basis: calc(35% - 40px); /* Dois itens por linha em telas menores */
     margin-bottom: 50px;
   }
-  .catalogTitle{
+  .catalogTitle {
     font-size: 25px;
     margin-bottom: 200px;
     margin-top: 30px;
-    padding:-150px;
-    text-align:center;
+    padding: -150px;
+    text-align: center;
   }
 }
