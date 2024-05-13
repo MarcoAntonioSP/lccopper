@@ -1,39 +1,86 @@
 import styles from "./footerstyle.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
+  const linkContainerStyles = {
+    color: "white" /* Cor branca */,
+  };
+
   return (
     <footer className={styles.footer}>
-      <div className={styles.contactInfo}>
-        <h3>Contato</h3>
-        <p>
-          <strong>Escritório e Fábrica:</strong>
-          <br />
-          Rua São João, 200 | Jardim Soeiro
-          <br />
-          Ferraz de Vasconcelos - SP
-          <br />
-          CEP 08540-200
-          <br />
-        </p>
+      <div className={styles.container}>
+        <div className={styles.imageContainer}>
+          <Image
+            src="/fernando.jpg"
+            alt="Fernando Ramirez"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div>
+          <h3>Fernando Ramirez</h3>
+          <p>Comercial</p>
+          <p>
+            (11) 4676-0398
+            <br />
+            (11) 94023-8626
+            <br />
+            (11) 99601-6574
+          </p>
+          <a href="mailto:fernando@lccopper.com.br">fernando@lccopper.com.br</a>
+        </div>
       </div>
-      <div className={styles.contatphone}>
-        <p>
-          📞 Tel.: (11) 4676-0398 / 4676-3092 - <br />
-          📞 Fax: (11) 4679-7171 - Cel: (11) 94789-5483
+      <div className={styles.container}>
+        <div className={styles.imageContainer}>
+          <Image
+            src="/eduardo.jpg"
+            alt="Eduardo Giuliatti"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div>
+          <h3>Eduardo Giuliatti</h3>
+          <p>Engenheiro Comercial</p>
+          <p>
+            (11) 4676-0398
+            <br />
+            (11) 94487-0665
+          </p>
+          <a href="mailto:eduardo@lccopper.com.br">
+            eduardo@lccopper.com.br
+          </a>{" "}
           <br />
-          👷 Engenheiro Comercial: Eduardo Giuliatti Teixeira
-          <br />
-          📧E-mail:{" "}
-          <a href="fernando@lccopper.com.br">fernando@lccopper.com.br</a>
-          <br />
-          🔗Nosso site:
-          <a href="http://www.lccopper.com.br">http://www.lccopper.com.br</a>
-        </p>
-        <br /> <br /> <br />
-        <a href="/" className={styles.link}>
-          Início
-        </a>
+          <a
+            href="http://www.lccopper.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.lccopper.com.br
+          </a>
+        </div>
+      </div>
+      <div className={styles.container}>
+        <div className={styles.imageContainer}>
+          <Image
+            src="/escritorio.jpg"
+            alt="Escritório LC Copper"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div>
+          <h3>Escritório e Fábrica:</h3>
+          <p>Rua São João, 200 | Jardim Soeiro</p>
+          <p>Ferraz de Vasconcelos - SP</p>
+          <p>CEP 08540-200</p>
+          <div className={styles.linkContainer}>
+            <Link href="/" className={styles.link}>
+              Início
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );
