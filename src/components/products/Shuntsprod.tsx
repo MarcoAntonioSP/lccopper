@@ -12,7 +12,7 @@ export default function Shuntsprod() {
         </div>
         <div className={styles.imgandtext}>
           <div className={styles.imgprod}>
-            <img src="/shunts/shunts03.png" alt="eletrodo" />
+            <img src="/shunts/shunts01.png" alt="eletrodo" />
           </div>
           <div className={styles.textprod}>
             <h1>
@@ -50,7 +50,7 @@ export default function Shuntsprod() {
         </div>
         <div className={styles.imgandtext}>
           <div className={styles.imgprod}>
-            <img src="/shunts/shunts01.webp" alt="eletrodo" />
+            <img src="/shunts/shunts02.png" alt="eletrodo" />
           </div>
           <div className={styles.textprod}>
             <h1> Aplicações Diversas: Ideais para:</h1>

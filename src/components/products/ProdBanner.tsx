@@ -87,7 +87,7 @@ export default function ProdBanner() {
           <a href="shunts">
             {" "}
             <Image
-              src="/shunts/shunts02.webp"
+              src="/shunts/shunts01.png"
               alt="Product 6"
               layout="fill"
               objectFit="cover"

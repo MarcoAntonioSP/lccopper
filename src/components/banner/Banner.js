@@ -16,7 +16,7 @@ export default function Banner() {
         </a>
       </div>
       <div className={styles.textContainer}>
-        <p className={styles.animatedText}>Lc Copper metalurgica</p>
+        <p className={styles.animatedText}>LC Copper: Precisão e Eficiência para a Automação Industrial.</p>
       </div>
     </div>
   );

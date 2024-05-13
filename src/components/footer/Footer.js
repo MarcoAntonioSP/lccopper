@@ -11,11 +11,11 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={`${styles.menu} ${styles.container}`}>
         <div className={styles.imageContainer}>
-          <Image
-            src="/fernando.jpg"
+        <Image
+            src="/logofootersf.png"
             alt="Logo lccopper"
-            width={100}
-            height={100}
+            width={200}
+            height={50}
           />
         </div>
         <div>
@@ -34,10 +34,10 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
-            src="/eduardo.jpg"
+            src="/logofootersf.png"
             alt="Logo lccopper"
-            width={100}
-            height={100}
+            width={200}
+            height={50}
           />
         </div>
         <div>
@@ -63,14 +63,9 @@ const Footer = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
-          <Image
-            src="/escritorio.jpg"
-            alt="Logo lccopper"
-            width={100}
-            height={100}
-          />
         </div>
         <div>
+          <br/><br/> 
           <h3>Escritório e Fábrica:</h3>
           <p>Rua São João, 200 | Jardim Soeiro</p>
           <p>Ferraz de Vasconcelos - SP</p>

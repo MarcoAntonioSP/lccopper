@@ -19,7 +19,7 @@
 .imgson {
   height: 100%;
   object-fit: cover;
-  background-image: url(/images/imagleft.png); /* Caminho para a imagem */
+  background-image: url(/historia01.png); /* Caminho para a imagem */
   background-size: cover; /* Faz com que a imagem cubra todo o elemento */
   background-position: center; /* Centraliza a imagem */
 }

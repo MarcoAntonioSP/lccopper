@@ -3,16 +3,12 @@
   line-height: 1.6;
   color: #333;
   padding: 2rem;
-  max-width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 230px;
   display: flex;
-  margin: 80px;
+  flex-direction: column;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.section {
-  margin-bottom: 2rem;
 }
 
 .title {
@@ -22,73 +18,112 @@
   color: #007bff;
 }
 
-.subtitle {
+.contatoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.contatoItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 48%;
+  margin-bottom: 2rem;
+}
+
+.imageContainer {
+  margin-bottom: 10px;
+}
+
+.contatoItem h3 {
   font-size: 1.8rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  margin-top: 155px;
+  margin-bottom: 10px;
+  color: #2a8ff3;
 }
 
-.paragraph {
-  margin-bottom: 1.5rem;
+.contatoItem p,
+.contatoItem a {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
 }
 
-/* Estilos do formulário */
+.contatoItem a {
+  text-decoration: none;
+  color: blue;
+}
+
+.contatoItem a:hover {
+  transform: translateY(-5px);
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.linkContainer {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(10, 0, 87);
+}
+
+.link {
+  border: 1px solid rgba(22, 1, 1, 0.514);
+  padding: 5px;
+  border-radius: 10px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .formGroup {
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 }
 
-.formGroup label {
-  display: block;
-  margin-bottom: 0.5rem;
+.formLabel {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.formGroup input,
-.formGroup textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ddd;
+.formInput {
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
 }
 
-.form button {
+.formButton {
+  padding: 10px 20px;
   background-color: #007bff;
   color: white;
-  padding: 1rem 2rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
-/* Responsividade */
+.formButton:hover {
+  background-color: #0056b3;
+}
+
 @media (max-width: 768px) {
-  .container {
-    display: flex;
-    margin: 60px;
-    margin-top: 130px;
-    align-items: inherit;
+  .contatoContainer {
     flex-direction: column;
-    justify-content: space-between;
-  }
-  .title {
-    font-size: 10x;
-  }
-  .section {
-    margin-bottom: 10px;
   }
 
-  .subtitle {
-    font-size: 1.5rem;
-    margin-top: 20px;
-  }
-  .form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0px;
+  .contatoItem {
+    width: 100%;
   }
 }

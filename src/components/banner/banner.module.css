@@ -5,7 +5,7 @@
   width: 100vw;
   height: 80vh;
   overflow: hidden;
-  background-image: url(/bannerhome01.jpeg);
+  background-image: url(/home01.png);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -26,7 +26,7 @@
   font-weight: bold;
   position: absolute;
   white-space: nowrap;
-  color: #003b8c;
+  color: #eed705;
   margin-bottom: 100px;
   overflow: hidden;
 }
@@ -41,7 +41,7 @@
     transform: translateX(100vw);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-120%);
   }
 }
 
