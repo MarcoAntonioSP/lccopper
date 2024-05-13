@@ -9,11 +9,11 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.container}>
+      <div className={`${styles.menu} ${styles.container}`}>
         <div className={styles.imageContainer}>
           <Image
             src="/fernando.jpg"
-            alt="Fernando Ramirez"
+            alt="Logo lccopper"
             width={100}
             height={100}
           />
@@ -35,7 +35,7 @@ const Footer = () => {
         <div className={styles.imageContainer}>
           <Image
             src="/eduardo.jpg"
-            alt="Eduardo Giuliatti"
+            alt="Logo lccopper"
             width={100}
             height={100}
           />
@@ -65,7 +65,7 @@ const Footer = () => {
         <div className={styles.imageContainer}>
           <Image
             src="/escritorio.jpg"
-            alt="Escritório LC Copper"
+            alt="Logo lccopper"
             width={100}
             height={100}
           />

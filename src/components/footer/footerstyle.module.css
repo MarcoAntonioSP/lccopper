@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 45px;
-  margin-top: 20px;
+  margin-top: 60px;
   background-color: #00000825;
   color: #350808;
 }
@@ -64,5 +64,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .container2 {
+    margin-left: -25px;
+    padding-left: 50px;
   }
 }
