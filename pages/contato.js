@@ -4,11 +4,11 @@ import Footer from "../src/components/footer/Footer";
 import Contato from "../src/components/contato/Contato"; // Assuming Contato is the correct component
 
 export default function ContatoPage() {
-    return (
-        <div>
-            <Header />
-            <Contato />
-            <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <Header />
+
+      <Footer />
+    </div>
+  );
 }
