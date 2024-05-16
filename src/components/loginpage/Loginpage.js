@@ -1,3 +1,6 @@
+"use client"
+
+
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -33,6 +36,7 @@ export default function Loginpage() {
       <form className={styles.containerbuttons} onSubmit={handleSubmit}>
         <input
           className={styles.buttonslogin}
+          onClick={() =>sigin}
           type="text"
           name="email"
           placeholder="Digite seu e-mail"
