@@ -1,7 +1,7 @@
 .header {
   width: 100vw;
   height: 95px; /* Altura fixa de 95px */
-  background-color: #ffffff;
+  background-color: #ffffffe8;
   position: fixed; /* Fixar o menu no topo */
   top: 0;
   left: 0;
@@ -10,7 +10,7 @@
 }
 
 .scrolled {
-  height: 70px; /* Altura reduzida quando a tela é rolada */
+  height:110px;
 }
 
 .linetop {

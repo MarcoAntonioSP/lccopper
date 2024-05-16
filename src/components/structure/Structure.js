@@ -30,10 +30,10 @@ export default function Structure() {
           </div>
           <div className={styles.sontreemidle}>Usinagem</div>
           <div className={styles.sontree}>
-          • 4 Tornos CNC <br/>
-          • 2 Centros de Usinagem <br/>
-          • 4 Tornos Mecânico<br/>
-          • 2 Fresadoras Ferramenteira<br/>
+          • Tornos CNC <br/>
+          • Centros de Usinagem <br/>
+          • Tornos Mecânico<br/>
+          • Fresadoras Ferramenteira<br/>
           • Entre outros
           </div>
         </div>
