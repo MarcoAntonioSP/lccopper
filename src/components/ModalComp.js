@@ -50,7 +50,7 @@ import {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>{dataEdit.index !== undefined ? "Editar Cliente" : "Novo Cliente"}</ModalHeader>
+          <ModalHeader>{dataEdit.index !== undefined ? "Editar Cliente" : "Nova Vaga"}</ModalHeader>
           <ModalBody>
             <FormControl>
               <FormLabel htmlFor="name">Nome</FormLabel>
@@ -62,7 +62,7 @@ import {
               />
             </FormControl>
             <FormControl mt={4}>
-              <FormLabel htmlFor="email">E-mail</FormLabel>
+              <FormLabel htmlFor="email">Descrição da vaga</FormLabel>
               <Input
                 id="email"
                 type="email"

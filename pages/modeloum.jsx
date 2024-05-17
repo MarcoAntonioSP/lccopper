@@ -66,7 +66,7 @@ const Modeloum = () => {
                   Nome da vaga:
                 </Th>
                 <Th maxW={isMobile ? 5 : 100} fontSize="20px">
-                  Funções
+                Descrição da vaga
                 </Th>
                 <Th p={0}></Th>
                 <Th p={0}></Th>
@@ -112,5 +112,4 @@ const Modeloum = () => {
     </Flex>
   );
 };
-
 export default Modeloum;
