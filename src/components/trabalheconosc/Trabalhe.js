@@ -5,7 +5,8 @@ export default function TrabalheConosco() {
     <div className={styles.container}>
       {/* Box de Vagas */}
       <section className={styles.vagas}>
-        <h2 className={styles.title}>Vagas Abertas</h2><p>"Apenas um exemplo"</p>
+        <h2 className={styles.title}>Vagas Abertas</h2>
+        <p>"Apenas um exemplo"</p>
         <div className={styles.vagasBox}>
           {/* Exemplo de Vaga */}
           <div className={styles.vaga}>
@@ -16,10 +17,15 @@ export default function TrabalheConosco() {
               Procuramos um profissional com experiência.
             </p>
             <ul className={styles.vagaRequirements}>
-              <li>Realizar usinagem em tornos CNC de peças em materiais ferrosos e não ferrosos.</li>
+              <li>
+                Realizar usinagem em tornos CNC de peças em materiais ferrosos e não
+                ferrosos.
+              </li>
               <li>Fazer as alterações necessárias em programas para corrigir deficiências e falhas.</li>
-              <li>Interpretar ordem de fabricação e desenho técnico do produto.
-                Utilizar instrumentos de medição. </li>
+              <li>
+                Interpretar ordem de fabricação e desenho técnico do produto.
+                Utilizar instrumentos de medição.
+              </li>
             </ul>
           </div>
           {/* Adicione mais vagas aqui */}
@@ -28,7 +34,9 @@ export default function TrabalheConosco() {
 
       {/* Formulário de Candidatura */}
       <section className={styles.form}>
-        <h2 className={`${styles.title2} ${styles.title}`}>
+        <h2
+          className={`${styles.title2} ${styles.title}`}
+        >
           Envie seu currículo para uma das vagas acima
         </h2>
         <form className={styles.formContainer}>

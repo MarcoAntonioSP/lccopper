@@ -28,9 +28,13 @@
     color:#003b8c;
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 15px;
+    font-size: 20px;
+    padding: 5px;
   }
   
   .vagasBox {
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
@@ -38,21 +42,24 @@
   
   .vaga {
     border: 1px solid #ddd;
+    color: rgb(255, 255, 255);
     padding: 1.5rem;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 20px;
   }
   
   .vaga:hover {
+    background-color: #003b8c;
     transform: translateY(-5px);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+
   }
   
   .vagaTitle {
     font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 1rem;
+    
   }
   
   .vagaDescription {
@@ -62,6 +69,7 @@
   .vagaRequirements {
     list-style: disc;
     padding-left: 2rem;
+    
   }
   
   .form {

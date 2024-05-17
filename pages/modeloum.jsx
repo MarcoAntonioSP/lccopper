@@ -13,9 +13,9 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import ModalComp from "../src/components/ModalComp";
-import Header from "../src/components/header/Header";
-import Footer from "../src/components/footer/Footer";
+import ModalComp from "../src/components/ModalComp"; // Supondo que ModalComp esteja em src/components
+import Header from "../src/components/header/Header"; // Supondo que Header esteja em src/components/header
+import Footer from "../src/components/footer/Footer"; // Supondo que Footer esteja em src/components/footer
 
 const Modeloum = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -66,10 +66,10 @@ const Modeloum = () => {
                   Nome da vaga:
                 </Th>
                 <Th maxW={isMobile ? 5 : 100} fontSize="20px">
-                Descrição da vaga
+                  Descrição da vaga
                 </Th>
-                <Th p={0}></Th>
-                <Th p={0}></Th>
+                <Th p={0} />
+                <Th p={0} />
               </Tr>
             </Thead>
             <Tbody>
