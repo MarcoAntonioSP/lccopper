@@ -11,17 +11,3 @@
   background-color: rgba(201, 206, 205, 0.701);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
 }
-
-.containerbuttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-
-.buttonslogin {
-  margin: 5px;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.333);
-  padding: 15px;
-}
