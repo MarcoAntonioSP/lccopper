@@ -45,10 +45,10 @@ export default function Header() {
               <Link href="/contato">Contato</Link>
             </li>
             <li>
-              <Link href="/quemsomos">Quem somos</Link>
+              <Link href="/quemsomos">Quem Somos</Link>
             </li>
             <li>
-              <Link href="/trabalheconosco">Trabalhe conosco</Link>
+              <Link href="/trabalheconosco">Trabalhe Conosco</Link>
             </li>
           </ul>
         </nav>
