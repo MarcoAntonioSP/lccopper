@@ -11,20 +11,20 @@ export default function TrabalheConosco() {
           {/* Exemplo de Vaga */}
           <div className={styles.vaga}>
             <h3 className={styles.vagaTitle}>
-              Operador de Torno CNC (Pleno)
+              Sem vagas no momento
             </h3>
             <p className={styles.vagaDescription}>
-              Procuramos um profissional com experiência.
+              
             </p>
             <ul className={styles.vagaRequirements}>
               <li>
-                Realizar usinagem em tornos CNC de peças em materiais ferrosos e não
-                ferrosos.
+                
               </li>
-              <li>Fazer as alterações necessárias em programas para corrigir deficiências e falhas.</li>
               <li>
-                Interpretar ordem de fabricação e desenho técnico do produto.
-                Utilizar instrumentos de medição.
+
+              </li>
+              <li>
+                
               </li>
             </ul>
           </div>
@@ -85,9 +85,6 @@ export default function TrabalheConosco() {
           </button>
         </form>
       </section>
-      <a href="/modeloum" className={styles.anchor}>
-        Login Adimin
-      </a>
     </div>
   );
 }
