@@ -4,8 +4,8 @@ export default function Eletrodos() {
   return (
     <div className={styles.container}>
       <div className={styles.texttop}>
-        <div className={styles.title}>
-          <h1>
+        <div>
+          <h1 className={styles.title}>
             Eletrodos de Solda por Resistência: A Solução para Alta
             Produtividade e Baixo Custo
           </h1>

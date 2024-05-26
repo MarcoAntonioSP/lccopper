@@ -57,7 +57,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            www.lccopper.com.br
+            www.lccopper.com
           </a>
         </div>
       </div>

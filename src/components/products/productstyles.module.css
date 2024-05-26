@@ -13,6 +13,8 @@
   margin-top: 150px;
 }
 
+
+
 .texttop {
   width: 100%;
   margin: 5px;
@@ -26,6 +28,10 @@
   margin-bottom: 15px;
   background-color: #0000002f;
   border-radius: 15px;
+}
+
+.title h1 { 
+  font-size: 40px;
 }
 
 .imgandtext {
@@ -43,10 +49,10 @@
   object-fit: cover;
   overflow: hidden;
   border-radius: 15px;
-  margin-bottom: 300px;
 }
 
 .imgprod img {
+
   object-fit: contain;
   border-radius: 15px;
   width: 100%;
