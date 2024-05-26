@@ -18,7 +18,7 @@ const Footer = () => {
             height={50}
           />
         </div>
-        <div>
+        <div className={styles.contatos}>
           <h3>Fernando Ramirez</h3>
           <p>Comercial</p>
           <p>
@@ -50,15 +50,11 @@ const Footer = () => {
           </p>
           <a href="mailto:eduardo@lccopper.com.br">
             eduardo@lccopper.com.br
-          </a>{" "}
+          </a>{""} <br/> <br/>
+          <a href="https://lccopper.com">
+          www.lccopper.com
+          </a>{""}
           <br />
-          <a
-            href="http://www.lccopper.com.br"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            www.lccopper.com
-          </a>
         </div>
       </div>
       <div className={styles.container}>

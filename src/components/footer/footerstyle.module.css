@@ -10,12 +10,22 @@
   color: #350808;
 }
 
+.footer a {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding: 10px;
+}
+
 .container {
   flex: 1;
   margin: 10px;
   text-align: left;
   flex-direction: column;
 }
+
 
 .imageContainer {
   margin-bottom: 10px;
@@ -29,21 +39,23 @@
 
 .container p,
 .container a {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   margin-bottom: 8px;
 }
 
 .container a {
   text-decoration: none;
-  color: blue;
+  color: #1a73e8;
+  margin-left: -10px;
+  border: 1px solid rgba(22, 1, 1, 0.192);
 }
 
 .container a:hover {
   transform: translateY(-5px);
   background-color: yellow;
-  border-radius: 10px;
-  padding: 3px;
+  border-radius: 20px;
+  padding: 15px;
 }
 
 .linkContainer {
@@ -53,7 +65,7 @@
 }
 
 .link {
-  border: 1px solid rgba(22, 1, 1, 0.514);
+  border: 1px solid rgba(22, 1, 1, 0.192);
   padding: 5px;
   border-radius: 10px;
 }
