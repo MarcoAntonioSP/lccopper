@@ -6,7 +6,6 @@ export default function TrabalheConosco() {
       {/* Box de Vagas */}
       <section className={styles.vagas}>
         <h2 className={styles.title}>Vagas Abertas</h2>
-        <p>"Apenas um exemplo"</p>
         <div className={styles.vagasBox}>
           {/* Exemplo de Vaga */}
           <div className={styles.vaga}>
