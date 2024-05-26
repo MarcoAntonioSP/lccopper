@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./prodbanner.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProdBanner() {
   return (
@@ -8,91 +9,54 @@ export default function ProdBanner() {
       Catálogo
       <div className={styles.containerprod}>
         <div className={styles.productbox}>
-          <a href="/eletrodos">
-            {" "}
-            <Image
-              src="/eletrodos/eletrodo02.png"
-              alt="Product 1"
-              layout="fill"
-              objectFit="cover"
-            />
-          </a>
+          <Link href="eletrodos">
+            <img src="/eletrodos/eletrodo02.png" alt="logo" className={styles.favicon} />
+          </Link>
           <div className={styles.productInfo}>
             <h3>Eletrodos</h3>
             <p></p>
           </div>
         </div>
         <div className={styles.productbox}>
-          <a href="portaeletrodos">
-            {" "}
-            <Image
-              src="/portaeletrodos/portaeletrodo02.jpg"
-              alt="Product 2"
-              layout="fill"
-              objectFit="cover"
-            />
-          </a>
+          <Link href="portaeletrodos">
+            <img src="/portaeletrodos/portaeletrodo02.png" alt="logo" className={styles.favicon} />
+          </Link>
           <div className={styles.productInfo}>
             <h3>Porta Eletrodos</h3>
             <p></p>
           </div>
-        </div>
+        </div>  
         <div className={styles.productbox}>
-          <a href="pinos">
-            {" "}
-            <Image
-              src="/pinosguiabuchas/pino01.webp"
-              alt="Product 3"
-              layout="fill"
-              objectFit="cover"
-            />
-          </a>
+          <Link href="pinos">
+            <img src="/pinosguiabuchas/pino01.webp" alt="logo" className={styles.favicon} />
+          </Link>
           <div className={styles.productInfo}>
             <h3>Pinos Guia e Buchas</h3>
             <p></p>
           </div>
         </div>
         <div className={styles.productbox}>
-          <a href="bracos">
-            {" "}
-            <Image
-              src="/bracosepincas/braco01.jpg"
-              alt="Product 4"
-              layout="fill"
-              objectFit="cover"
-            />
-          </a>
+          <Link href="bracos">
+            <img src="/bracosepincas/braco01.jpg" alt="logo" className={styles.favicon} />
+          </Link>
           <div className={styles.productInfo}>
             <h3>Braços e Pinças</h3>
             <p></p>
           </div>
         </div>
         <div className={styles.productbox}>
-          <a href="discos">
-            {""}
-            <Image
-              src="/discos/disco1.jpg"
-              alt="Product 5"
-              layout="fill"
-              objectFit="cover"
-            />
-            {""}
-          </a>
+          <Link href="discos">
+            <img src="/discos/disco1.jpg" alt="logo" className={styles.favicon} />
+          </Link>
           <div className={styles.productInfo}>
             <h3>Discos</h3>
             <p></p>
           </div>
         </div>
         <div className={styles.productbox}>
-          <a href="shunts">
-            {" "}
-            <Image
-              src="/shunts/shunts01.png"
-              alt="Product 6"
-              layout="fill"
-              objectFit="cover"
-            />{" "}
-          </a>
+          <Link href="shunts">
+            <img src="/shunts/shunts01.png" alt="logo" className={styles.favicon} />
+          </Link>
           <div className={styles.productInfo}>
             <h3>Shunts</h3>
             <p></p>

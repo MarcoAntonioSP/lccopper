@@ -1,10 +1,11 @@
 .catalogTitle {
   font-size: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 400px;
   margin-top: 200px;
   padding: -150px;
   color: #0c72c6;
   text-align: center;
+  height: auto;
 }
 .containerprod {
   display: flex;
@@ -39,6 +40,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  margin-top: 15px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 10px;
@@ -62,7 +64,7 @@
   }
   .catalogTitle {
     font-size: 25px;
-    margin-bottom: 200px;
+    margin-bottom: 0px;
     margin-top: 215px;
     padding: -150px;
     text-align: center;
