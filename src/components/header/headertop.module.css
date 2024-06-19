@@ -82,6 +82,22 @@
   color: #555;
 }
 
+.whatsicon {
+  border-radius: 50%;
+  width: 90px;
+  position: fixed; /* Fixar o menu no topo */
+  top:  82vh;
+  left: 91vw;
+  z-index: 100;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsicon:hover {
+  transform: scale(1.2); /* Aumenta a imagem em 20% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+  cursor: pointer; /* Muda o cursor do mouse */
+}
+
 @media (max-width: 900px) {
   .logoandnav {
     flex-direction: column;

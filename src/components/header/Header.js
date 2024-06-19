@@ -53,6 +53,8 @@ export default function Header() {
           </ul>
         </nav>
       </div>
+      <div className=""></div>
+          <img src="/whatsapp.jpg" className={styles.whatsicon} alt="" />
     </div>
   );
 }
