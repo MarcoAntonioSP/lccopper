@@ -54,7 +54,7 @@ export default function Header() {
         </nav>
       </div>
       <div className=""></div>
-      <a href="https://wa.me/5511940238626?text= Olá, tudo bem?" target="_blank">
+      <a href="https://wa.me/5511996016574?text= Olá, tudo bem?" target="_blank">
         <img src="/whatsAppicone.png" className={styles.whatsicon} alt="" />
       </a>
     </div>
