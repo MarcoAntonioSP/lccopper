@@ -44,29 +44,6 @@ export default function Contato() {
             />
           </div>
           <div>
-            <h3>Eduardo Giuliatti</h3>
-            <p>Engenheiro Comercial</p>
-            <p>
-              (11) 4676-0398
-              <br />
-              (11) 94487-0665
-            </p>
-            <a href="mailto:eduardo@lccopper.com.br">
-              eduardo@lccopper.com.br
-            </a>{" "}
-            <br />
-            <a
-              href="http://www.lccopper.com.br"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.lccopper.com.br
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className={styles.contatoItem}>
-        <div>
           <br />
           <br />
           <h3>Escritório e Fábrica:</h3>
@@ -74,6 +51,9 @@ export default function Contato() {
           <p>Ferraz de Vasconcelos - SP</p>
           <p>CEP 08540-200</p>
         </div>
+        </div>
+      </div>
+      <div className={styles.contatoItem}>
       </div>
       <form className={styles.form}>
         <div className={styles.formGroup}>
