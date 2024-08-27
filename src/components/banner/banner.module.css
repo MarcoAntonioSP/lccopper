@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 80vh;
   overflow: hidden;
   background-image: url(/home01.png);
@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(104, 104, 104, 0.333);
-  width: 100vw;
+  width: 100%;
   margin-right: 20px;
   font-size: 30px;
   margin-top: 450px;
