@@ -70,7 +70,7 @@ export default function Nossasvantagens() {
         <p>Entre em contato conosco e descubra como podemos ajudar!</p>
         <p>
           Visite nosso site:{" "}
-          <a href="http://www.lccopper.com.br/">http://www.lccopper.com.br/</a>
+          <a href="http://www.lccopper.com/">http://www.lccopper.com</a>
         </p>
         {/* ... informações de contato ... */}
       </section>

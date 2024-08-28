@@ -29,8 +29,8 @@ export default function Contato() {
               <br />
               (11) 99601-6574
             </p>
-            <a href="mailto:fernando@lccopper.com.br">
-              fernando@lccopper.com.br
+            <a href="mailto:fernando@lccopper.com">
+              fernando@lccopper.com
             </a>
           </div>
         </div>
