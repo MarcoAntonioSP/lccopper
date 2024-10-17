@@ -1,24 +1,88 @@
-html,
-body {
-  padding: 0;
+/* styles/globals.css */
+
+/* Reset CSS padrão */
+
+/* Remove a margem e o padding de todos os elementos */
+* {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  /* Facilita o controle do tamanho dos elementos */
 }
 
+
+/* Define a fonte padrão e a cor do texto */
+body {
+  font-family: Arial, sans-serif;
+  /* Altere para a fonte desejada */
+  color: #333;
+  /* Cor padrão do texto */
+  background-color: #fff;
+  /* Cor de fundo padrão */
+  overflow-x: hidden;
+}
+
+/* Remove o estilo padrão de listas */
+ul,
+ol {
+  list-style: none;
+  /* Remove marcadores */
+}
+
+/* Remove a decoração padrão de links */
 a {
-  color: inherit;
   text-decoration: none;
+  /* Remove sublinhados */
+  color: inherit;
+  /* Faz os links herdar a cor do texto pai */
+}
+
+/* Define uma regra para elementos de cabeçalho */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  /* Remove a margem padrão dos cabeçalhos */
+}
+
+/* Define regras para tabelas */
+table {
+  border-collapse: collapse;
+  /* Remove espaços entre células */
+  width: 100%;
+  /* Faz as tabelas ocuparem 100% da largura do contêiner */
+}
+
+/* Define regras para imagens */
+img {
+  max-width: 100%;
+  /* Faz com que imagens não excedam a largura do contêiner */
+  height: auto;
+  /* Mantém a proporção da imagem */
+}
+
+/* Define regras para formulários */
+input,
+textarea,
+select {
+  font-family: inherit;
+  /* Faz os inputs usarem a mesma fonte do body */
+  font-size: inherit;
+  /* Faz os inputs usarem o mesmo tamanho de fonte do body */
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Regras adicionais para garantir uma boa acessibilidade */
+:focus {
+  outline: 2px solid blue;
+  /* Destaca elementos focados */
 }
 
 @media (prefers-color-scheme: dark) {

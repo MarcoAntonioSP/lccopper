@@ -1,0 +1,45 @@
+.headernav{
+    height: 680px;
+    overflow: hidden;
+}
+
+.headertop {
+    position: relative;
+}
+
+.teste {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    color: white;
+    z-index: 10;
+    margin: 10px;
+}
+.teste111 {
+    text-align: center;
+}
+
+.linksheader,
+.linksheader a {
+    display: flex;
+    margin: 10px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 2px 2px #1a1919;
+}
+
+.navbarheader {
+    background-color: #ffffff56;
+    display: flex;
+}
+
+
+.navbarHeader .nav-link {
+    color: white !important;
+}
+
+.navbarHeader .nav-link.active {
+    color: white;
+    /* Mantém a cor branca para o link ativo */
+}
