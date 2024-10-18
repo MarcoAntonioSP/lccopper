@@ -1,26 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-/* Reset CSS padrão */
-
-/* Remove a margem e o padding de todos os elementos */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   /* Facilita o controle do tamanho dos elementos */
 }
 
 
 /* Define a fonte padrão e a cor do texto */
 body {
-  font-family: Arial, sans-serif;
-  /* Altere para a fonte desejada */
+  font-family: Arial, sans-serif, 'Courier New', Courier, monospace;
   color: #333;
-  /* Cor padrão do texto */
-  background-color: #fff;
-  /* Cor de fundo padrão */
   overflow-x: hidden;
 }
 

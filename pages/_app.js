@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import { ChakraProvider } from '@chakra-ui/react';
 import { extendTheme } from '@chakra-ui/react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import Script from 'next/script'; // Add this import
 
 const colors = {
@@ -19,10 +20,13 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <Component {...pageProps} />
       <Script 
+          src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        />
+        <Script 
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"  
+        />
+        <Script 
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-          crossOrigin="anonymous" 
-          strategy="afterInteractive" 
         />
     </ChakraProvider>
   );

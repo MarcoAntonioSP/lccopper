@@ -1,0 +1,140 @@
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #375166;
+    height: 40px;
+    text-align: center;
+    gap: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.top p {
+    margin-top: 8px;
+}
+
+.HeaderNav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0);
+
+}
+
+.testes {
+    height: 500px;
+}
+
+.nav a {
+    color: rgb(26, 10, 10);
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.nav a:hover {
+    color: rgb(37, 175, 255);
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+}
+
+.textlist a {
+    color: #5e595927;
+    margin-left: 200px;
+}
+
+.CarouselItem1 {
+    position: relative;
+
+}
+
+.textcarousel {
+    position: relative;
+    margin-left: 5%;
+}
+
+.textcarouselson {
+    width: 700px;
+    font-size: 50px;
+    position: absolute;
+    margin-top: -54%;
+    z-index: 15;
+    color: white;
+}
+
+.textcarouselson2 {
+    position: absolute;
+    margin-top: -35%;
+    font-size: 24px;
+    color: white;
+    width: 700px;
+}
+
+.textcarouselson3 {
+    font-size: 30px;
+    color: white; 
+}
+
+.textcarouselson4 {
+    font-size: 30px;
+    color: #198754;
+}
+.witr_btn {
+    background-color: blue;
+}
+
+.buttonsbanner {
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    margin-top: -27%;
+    z-index: 10;
+}
+.listbutton{
+    gap: 2 em;
+    display: flex;
+    flex-direction: row;
+}
+
+.textItem1 {
+    position: absolute;
+    color: white;
+    top: 40%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.315);
+    border-radius: 5px;
+    width: 500px;
+    height: 250px;
+}
+
+.my-carousel {
+    height: 800px;
+    overflow: hidden;
+}
+
+.my-carousel .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .my-carousel {
+        height: 280px;
+        /* Altura para telas menores */
+    }
+
+    .textcarouselson {
+        font-size: 30px;
+    }
+
+    .textcarouselson2 {
+        font-size: 13px;
+        margin-top: -32%;
+    }
+}
