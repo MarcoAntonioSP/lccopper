@@ -1,12 +1,12 @@
 import Clientes from "../src/components/clientes/Clientes";
-import Header from "../src/components/header/Header";
 import Footer from "../src/components/footer/Footer";
+import HeaderNav from "../src/components/headerNav/HeaderNav";
 
 
 export default function Page ( ) {
     return (
         <main>
-            <Header />
+            <HeaderNav />
             <Clientes />
             <Footer />
         </main>

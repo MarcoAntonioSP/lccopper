@@ -1,11 +1,11 @@
-import Header from "../src/components/header/Header";
 import Footer from "../src/components/footer/Footer";
+import HeaderNav from "../src/components/headerNav/HeaderNav";
 import Portaeletrodo from "../src/components/products/Portaeletro";
 
 export default function Page() {
   return (
     <main>
-      <Header />
+      <HeaderNav />
       <Portaeletrodo />
       <Footer />
     </main>

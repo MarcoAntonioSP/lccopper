@@ -5,6 +5,19 @@
   /* Facilita o controle do tamanho dos elementos */
 }
 
+.break {
+  display: block;
+}
+/* Aplica a sombra em todos os elementos de texto no site */
+body {
+  text-shadow: 1px 1px 1px #00000055;
+}
+
+/* Se desejar ser mais específico, pode incluir elementos de texto */
+p, h1, h2, h3, h4, h5, h6, span, a {
+  text-shadow: 1px 1px 1px #00000043;
+}
+
 
 /* Define a fonte padrão e a cor do texto */
 body {

@@ -1,13 +1,12 @@
-
-import Header from "../src/components/header/Header";
 import Footer from "../src/components/footer/Footer";
 import Bracos from "../src/components/products/Bracos";
+import HeaderNav from "../src/components/headerNav/HeaderNav";
 
 
 export default function Page ( ) {
     return (
         <main>
-            <Header />
+            <HeaderNav />
             <Bracos />
             <Footer />
         </main>

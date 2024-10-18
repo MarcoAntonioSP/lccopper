@@ -1,14 +1,18 @@
+
+
+
+/*------estilos-navBar--------- */
 .top {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: #375166;
-    height: 40px;
+    height: 44px;
     text-align: center;
     gap: 50px;
     color: white;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .top p {
@@ -18,6 +22,8 @@
 .HeaderNav {
     display: flex;
     flex-direction: column;
+    height: auto;
+    max-height: 1000px;
 }
 
 .nav {
@@ -36,12 +42,13 @@
 .nav a {
     color: rgb(26, 10, 10);
     font-size: 20px;
-    text-shadow: 1px 1px 1px black;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #00000074;
 }
 
 .nav a:hover {
-    color: rgb(37, 175, 255);
-    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+    color: rgb(1, 9, 14);
+    text-shadow: 0 0 10px #03bcf453, 0 0 20px #03bcf46c, 0 0 40px #03bcf46a, 0 0 80px #03bcf459, 0 0 160px #03bcf483;
 }
 
 .textlist a {
@@ -60,7 +67,7 @@
 }
 
 .textcarouselson {
-    width: 700px;
+    width: 80vw;
     font-size: 50px;
     position: absolute;
     margin-top: -54%;
@@ -73,17 +80,26 @@
     margin-top: -35%;
     font-size: 24px;
     color: white;
-    width: 700px;
+    width: 70VW;
 }
 
 .textcarouselson3 {
     font-size: 30px;
     color: white; 
 }
+.textcarouselson3 button {
+    color: white;
+    font-size: 30px;
+}
 
 .textcarouselson4 {
     font-size: 30px;
     color: #198754;
+}
+
+.textcarouselson4 button{
+    color: white;
+    font-size: 30px;
 }
 .witr_btn {
     background-color: blue;
@@ -112,7 +128,7 @@
     width: 500px;
     height: 250px;
 }
-
+/*------estilos-carousel--------- */
 .my-carousel {
     height: 800px;
     overflow: hidden;
@@ -123,18 +139,73 @@
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 948px) {
     .my-carousel {
         height: 280px;
         /* Altura para telas menores */
     }
 
+    .textcarousel {
+        display: flex;
+        flex-direction: column;
+    }
     .textcarouselson {
-        font-size: 30px;
+        font-size: 50px;
+        margin-top: -70%;
     }
 
     .textcarouselson2 {
-        font-size: 13px;
+        font-size: 18px;
+        margin-top: -28%;
+    }
+    .buttonsbanner {
+        position: absolute;
+        width: 800px;
+        height: 200px;
+        margin-top: -14%;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 613px) {
+    .my-carousel {
+        height: 280px;
+        /* Altura para telas menores */
+    }
+
+    .textcarousel {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .textcarouselson {
+        font-size: 30px;
+        margin-top: -72%;
+    }
+
+    .textcarouselson2 {
+        font-size: 14px;
         margin-top: -32%;
     }
+    .buttonsbanner {
+        position: absolute;
+        width: 400px;
+        height: 200px;
+        margin-top: -14%;
+        margin-left: -32px;
+        z-index: 10;
+    }
+    .top {
+       height:  40px;
+       font-size: 10.5px;
+    }
+    .textcarouselson3 button {
+        color: white;
+        font-size: 15px;
+    }
+    .textcarouselson4 button {
+        color: white;
+        font-size: 15px;
+    }
+    
 }
