@@ -31,6 +31,10 @@ function MyApp({ Component, pageProps }) {
         <title>LC Copper Metalúrgica LTDA - Soluções em Metalurgia</title>
         <link rel="canonical" href="http://www.lccopper.com.br/" />
         <meta name="robots" content="index, follow" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+        />
       </Head>
       <Component {...pageProps} />
       <Script 

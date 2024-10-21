@@ -8,10 +8,10 @@ export default function Bannertop() {
       <div>
         <div className={styles.top}>
           <p>
-            <i className="fa fa-whatsapp"></i> Fale por whatsapp: <a href="https://api.whatsapp.com/send?l=pt&phone=5511 996016574">(11) 99601-6574</a>
+            <i className="fa fa-whatsapp"></i> Fale por whatsapp: <a href="https://api.whatsapp.com/send?l=pt&phone=5511996016574">(11) 99601-6574</a>
           </p>
           <p>
-            <i className="fa fa-phone"></i> Ligue para nós: <a href="tel:5511 996016574">(11) 4676-0398</a>
+            <i className="fa fa-phone"></i> Ligue para nós: <a href="tel:551146760398">(11) 4676-0398</a>
           </p>
         </div>
       </div>

@@ -3,7 +3,7 @@ import NavBar from "../src/components/navbar/NavBar";
 import Structure from "../src/components/structure/Structure";
 import Presentation from "../src/components/prensentation/Presentation";
 import Apresentationstructure from "../src/components/structure/Apresentation";
-import Bannertop from "../src/components/bannertop/Bannertop";
+import Bannertop from "../src/components/Bannertop/Bannertop";
 
 
 export default function Home() {

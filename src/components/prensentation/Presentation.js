@@ -2,43 +2,107 @@ import styles from "./presentation.module.css";
 
 export default function Presentation() {
   return (
-    <div className={styles.container}>
-      <div className={styles.imgleft}>
-        <div className={styles.imgson}></div>
-      </div>
-      <div className={styles.presentation}>
-        <h1>História</h1>
-        <h2>
-          Empresa com quase 25 anos de experiência no ramo de reposição de solda
-          por resistência, usinagem de materiais ferrosos e não ferrosos
-          principalmente para atender indústria automotiva. Trabalhamos com as
-          principais montadoras de veículos leves e pesados do país fornecendo
-          todos os tipos de materiais e peças para a soldagem a ponto, projeção,
-          costura, e topo a topo.
-        </h2>
-      </div>
-      <div className={styles.linksright}>
-        <div className={styles.linksrightson}>
-          <h7>
-            Da matéria-prima ao produto final, a LC Copper fabrica
-            porta-eletrodos, pinças, braços para robôs e muito mais, com
-            materiais de alta qualidade e designs customizáveis.
-          </h7>
+    <div className={styles.serviceBgArea}>
+      <div className={`container ${styles.container}`}>
+        <div className="row">
+          <div className={styles.title}>
+            <h2>NOSSOS SERVIÇOS</h2>
+            <h3>Conforto e Qualidade em Soldagem</h3>
+            <h1>LC Copper Metalúrgica</h1>
+          </div>
         </div>
-        <div className={styles.linksrightson}>
-          <h7>
-            Invista em automação industrial de ponta com a LC Copper! Nossos
-            braços para robôs e pinças de solda oferecem precisão milimétrica,
-            durabilidade incomparável e tecnologia de resfriamento
-          </h7>
+
+        {/* Service Area */}
+        <div className="row">
+          {/* Serviço 1 */}
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div className={styles.serviceItem}>
+              <div className={styles.textBox}>
+                <i className="bi bi-wrench"></i>
+                <h3>Reposição de Solda</h3>
+                <p>
+                  Com quase 25 anos de experiência, oferecemos soluções de solda por resistência
+                  para a indústria automotiva, garantindo qualidade e eficiência.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Serviço 2 */}
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div className={styles.serviceItem}>
+              <div className={styles.textBox}>
+                <i className="bi bi-gear-fill"></i>
+                <h3>Usinagem de Materiais</h3>
+                <p>
+                  Trabalhamos com materiais ferrosos e não ferrosos, atendendo as demandas
+                  das principais montadoras do país.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Serviço 3 */}
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div className={styles.serviceItem}>
+              <div className={styles.textBox}>
+                <i className="bi bi-robot"></i>
+                <h3>Automação Industrial</h3>
+                <p>
+                  Nossos braços para robôs e pinças de solda oferecem precisão milimétrica e
+                  durabilidade incomparável.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Serviço 4 */}
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div className={styles.serviceItem}>
+              <div className={styles.textBox}>
+                <i className="bi bi-file-earmark-person"></i>
+                <h3>Consultoria Técnica</h3>
+                <p>
+                  Oferecemos consultoria especializada para otimizar seus processos de soldagem
+                  e automação.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Serviço 5 */}
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div className={styles.serviceItem}>
+              <div className={styles.textBox}>
+                <i className="bi bi-tools"></i>
+                <h3>Manutenção de Equipamentos</h3>
+                <p>
+                  Realizamos manutenção preventiva e corretiva, assegurando a longevidade e
+                  desempenho dos seus equipamentos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Serviço 6 */}
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div className={styles.serviceItem}>
+              <div className={styles.textBox}>
+                <i className="bi bi-box"></i>
+                <h3>Fornecimento de Materiais</h3>
+                <p>
+                  Da matéria-prima ao produto final, garantimos o fornecimento de materiais de
+                  alta qualidade.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className={styles.linksrightson}>
-          <h7>
-            Da consultoria ao desenvolvimento de produtos: LC Copper, seu
-            parceiro completo em soldagem e automação. Soluções personalizadas
-            para cada desafio: conte com a LC Copper para elevar sua produção a
-            um novo patamar.
-          </h7>
+
+        <div className={styles.callToAction}>
+          <a href="https://api.whatsapp.com/send?l=pt&phone=5511996016574" className={styles.ctaButton}>
+            Entre em Contato
+          </a>
         </div>
       </div>
     </div>
