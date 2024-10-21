@@ -1,11 +1,13 @@
+import BannerOneimg from "../src/components/banneronepages/BannerOneimg";
 import Footer from "../src/components/footer/Footer";
+import NavBar from "../src/components/navbar/NavBar";
 import Nossasvantagens from "../src/components/vantagens/Nossasvantagens";
-import HeaderNav from "../src/components/headerNav/HeaderNav";
 
 export default function Page () {
   return (
     <main>
-      <HeaderNav />
+      <Nav />
+      <BannerOneimg title="Nossas Vantagens" />
       <Nossasvantagens />
       <Footer />
     </main>

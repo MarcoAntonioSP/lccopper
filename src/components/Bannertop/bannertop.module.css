@@ -1,28 +1,9 @@
 
 
-
-/*------estilos-navBar--------- */
-.top {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #375166;
-    height: 44px;
-    text-align: center;
-    gap: 50px;
-    color: white;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.top p {
-    margin-top: 8px;
-}
-
 .HeaderNav {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    height: auto;
     max-height: 1000px;
 }
 

@@ -1,12 +1,15 @@
 
 import Footer from "../src/components/footer/Footer";
 import Discos from "../src/components/products/Discosprod";
-import HeaderNav from "../src/components/headerNav/HeaderNav";
+import NavBar from "../src/components/navbar/NavBar";
+import BannerOneimg from "../src/components/banneronepages/BannerOneimg";
+
 
 export default function Page() {
     return (
         <main>
-            <HeaderNav />
+            <NavBar />
+            <BannerOneimg title="Discos" />
             <Discos />
             <Footer />
         </main>

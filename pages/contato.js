@@ -1,12 +1,15 @@
 
 import Footer from "../src/components/footer/Footer";
 import Contato from "../src/components/contato/Contato"; 
-import HeaderNav from "../src/components/headerNav/HeaderNav";
+import NavBar from "../src/components/navbar/NavBar";
+import BannerOneimg from "../src/components/banneronepages/BannerOneimg";
+
 
 export default function ContatoPage() {
   return (
     <div>
-      <HeaderNav />
+      <NavBar />
+      <BannerOneimg title="Contato" />
       <Contato />
       <Footer />
     </div>

@@ -1,0 +1,88 @@
+.vagastyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f9f9f9; /* Fundo claro */
+}
+
+.vagasList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid responsivo */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limitar a largura */
+}
+
+.vagaCard {
+    background-color: #ffffff; /* Fundo branco para os cards */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s; /* Efeito de transição */
+}
+
+.vagaCard:hover {
+    transform: translateY(-5px); /* Efeito hover */
+}
+
+.vagaTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; /* Cor do texto */
+}
+
+.vagaDescription,
+.vagaRequisitos,
+.vagaSalario,
+.vagaLocalizacao {
+    margin: 5px 0;
+    color: #555; /* Cor do texto secundário */
+}
+
+.applicationForm {
+    background-color: #ffffff; /* Fundo branco */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px;
+    margin-top: 20px;
+    width: 70vw;
+    max-width: 600px; /* Largura máxima do formulário */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os campos */
+}
+
+.applicationForm h2 {
+    margin-bottom: 10px;
+    color: #333; /* Cor do título */
+}
+
+.applicationForm input {
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda dos campos */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem;
+    color: #555; /* Cor do texto */
+}
+
+.applicationForm button {
+    padding: 10px;
+    background-color: #007bff; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.applicationForm button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+.fileLabel {
+    margin-top: 10px;
+    color: #555; /* Cor do texto */
+    font-size: 0.9rem; /* Tamanho da fonte */
+}

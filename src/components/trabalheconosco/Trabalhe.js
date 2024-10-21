@@ -1,4 +1,6 @@
+// pages/trabalheconosco.js
 import styles from "./trabalhe.module.css";
+
 
 export default function TrabalheConosco() {
   return (
@@ -9,22 +11,9 @@ export default function TrabalheConosco() {
         <div className={styles.vagasBox}>
           {/* Exemplo de Vaga */}
           <div className={styles.vaga}>
-            <h3 className={styles.vagaTitle}>
-              Sem vagas no momento
-            </h3>
-            <p className={styles.vagaDescription}>
-              
-            </p>
+            <p className={styles.vagaDescription}></p>
             <ul className={styles.vagaRequirements}>
-              <li>
-                
-              </li>
-              <li>
-
-              </li>
-              <li>
-                
-              </li>
+              <li></li>
             </ul>
           </div>
           {/* Adicione mais vagas aqui */}
@@ -33,9 +22,7 @@ export default function TrabalheConosco() {
 
       {/* Formulário de Candidatura */}
       <section className={styles.form}>
-        <h2
-          className={`${styles.title2} ${styles.title}`}
-        >
+        <h2 className={`${styles.title2} ${styles.title}`}>
           Envie seu currículo para uma das vagas acima
         </h2>
         <form className={styles.formContainer}>

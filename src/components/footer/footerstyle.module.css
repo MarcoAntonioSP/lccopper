@@ -1,137 +1,149 @@
-.footer {
+/* footerstyle.module.css */
+
+/* Footer Area */
+.footerArea {
+  background-color: #1c1c1c;
+  color: white;
+  margin-top: 80px;
+  padding-top: 40px;
   height: auto;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 45px;
-  margin-top: 60px;
-  background-color: #00000825;
-  color: #350808;
 }
 
-.footer a {
-  background-color: rgb(255, 255, 255);
-  padding: 5px;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  font-weight: bold;
-  padding: 10px;
+/* Footer Middle */
+.footerMiddle {
+  border-bottom: 2px solid #444;
+  padding-bottom: 20px;
 }
 
 .container {
-  margin: 10px;
-  text-align: left;
+  max-width: 1200px;
+  margin: auto;
 }
 
-
-.imageContainer {
-  margin-bottom: 10px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.container h3 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #2a8ff3;
-}
-
-.container p,
-.container a {
-  font-size: 1.3rem;
-  line-height: 1.6;
-  margin-bottom: 8px;
-}
-
-.container a {
-  text-decoration: none;
-  color: #1a73e8;
-  margin-left: -10px;
-  border: 1px solid rgba(22, 1, 1, 0.192);
-}
-
-.container a:hover {
-  transform: translateY(-5px);
-  background-color: yellow;
-  border-radius: 20px;
-  padding: 15px;
-}
-
-.linkContainer {
-  text-align: center;
-  margin-top: 20px;
-  color: rgb(10, 0, 87);
-}
-
-.link {
-  border: 1px solid rgba(22, 1, 1, 0.192);
-  padding: 5px;
-  border-radius: 10px;
-}
-
-/* Estilos para o formulário */
-.formContainer {
+.col {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
+  min-width: 250px; /* Minimal width for responsiveness */
+  margin: 15px;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+
+.description p {
+  margin: 10px 0;
 }
 
-.formGroup {
-  margin-bottom: 15px;
+/* Social Icons */
+.socialIcons {
+  margin-top: 10px;
 }
 
-.formGroup label {
-  font-weight: bold;
-  margin-bottom: 5px;
+.socialIcons a {
+  color: #f39c12;
+  margin-right: 10px;
+  font-size: 20px;
+  transition: color 0.3s;
 }
 
-.formGroup input,
-.formGroup textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
+.socialIcons a:hover {
+  color: #e67e22;
 }
 
-.submitButton {
-  padding: 10px 20px;
-  background-color: #2a8ff3;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
+/* Useful Links */
+.usefulLinks ul {
+  list-style: none;
+  padding: 0;
 }
 
-.submitButton:hover {
-  background-color: #1a73e8;
+.usefulLinks li {
+  margin: 8px 0;
 }
 
-@media (max-width: 768px) {
-  .footer {
+.usefulLinks a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.usefulLinks a:hover {
+  color: #f39c12;
+}
+
+/* Contact Information */
+.contact {
+  .footer-widget {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 10px 0;
   }
-  .container2 {
-    margin-left: -25px;
-    padding-left: 50px;
+
+  .footer-widget i {
+    color: #f39c12;
   }
-  .formContainer {
-    width: 100%;
-    margin-top: 20px;
+
+  .contact-info {
+    margin-top: 10px;
   }
-  .form {
-    width: 90%;
+
+  .contact-info p {
+    margin: 5px 0;
   }
+
+  .contact-info a {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .contact-info a:hover {
+    color: #e67e22;
+  }
+}
+
+/* Services */
+.services {
+  margin-top: 20px;
+}
+
+.serviceItem {
+  margin: 8px 0;
+}
+
+/* Footer Bottom */
+.footerBottom {
+  padding: 20px 0;
+  background-color: #111;
+}
+
+.copyRight {
+  font-size: 14px;
+  text-align: center;
+}
+
+.footerMenu {
+  text-align: center;
+}
+
+.footerMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerMenu li {
+  display: inline;
+  margin-left: 15px;
+}
+
+.footerMenu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footerMenu a:hover {
+  color: #f39c12;
 }

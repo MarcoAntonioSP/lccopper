@@ -1,11 +1,14 @@
+import BannerOneimg from "../src/components/banneronepages/BannerOneimg";
 import Footer from "../src/components/footer/Footer";
+import NavBar from "../src/components/navbar/NavBar";
 import Shuntsprod from "../src/components/products/Shuntsprod";
-import HeaderNav from "../src/components/headerNav/HeaderNav";
+
 
 export default function Page() {
     return (
         <main>
-            <HeaderNav />
+            <NavBar />
+            <BannerOneimg title="Shunts" />
             <Shuntsprod />
             <Footer />
         </main>

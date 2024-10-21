@@ -1,12 +1,14 @@
 import Footer from "../src/components/footer/Footer";
 import Bracos from "../src/components/products/Bracos";
-import HeaderNav from "../src/components/headerNav/HeaderNav";
+import NavBar from "../src/components/navbar/NavBar";
+import BannerOneimg from "../src/components/banneronepages/BannerOneimg";
 
 
-export default function Page ( ) {
+export default function Page() {
     return (
         <main>
-            <HeaderNav />
+            <NavBar />
+            <BannerOneimg title="Braços de Robo" />
             <Bracos />
             <Footer />
         </main>

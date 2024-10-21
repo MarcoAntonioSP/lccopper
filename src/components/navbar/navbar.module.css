@@ -1,0 +1,47 @@
+/*------estilos-navBar--------- */
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #375166;
+    height: 44px;
+    text-align: center;
+    gap: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.top p {
+    margin-top: 8px;
+}
+
+.HeaderNav {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav a {
+    color: #1a0a0a;
+    font-size: 18px; /* Diminui um pouco para um visual mais leve */
+    font-weight: 600;
+}
+
+.nav a:hover {
+    color: #0c5460; /* Cor de destaque ao passar o mouse */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Estilo para itens de dropdown */
+}
+
+

@@ -1,15 +1,16 @@
 import Footer from "../src/components/footer/Footer";
-import Header from "../src/components/header/Header";
-import Banner from "../src/components/banner/Banner";
+import NavBar from "../src/components/navbar/NavBar";
 import Structure from "../src/components/structure/Structure";
 import Presentation from "../src/components/prensentation/Presentation";
 import Apresentationstructure from "../src/components/structure/Apresentation";
-import HeaderNav from "../src/components/headerNav/HeaderNav";
+import Bannertop from "../src/components/bannertop/Bannertop";
+
 
 export default function Home() {
   return (
     <div>
-      <HeaderNav />
+      <NavBar />
+      <Bannertop />
       <Presentation />
       <Apresentationstructure />
       <Structure />

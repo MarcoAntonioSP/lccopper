@@ -1,76 +1,9 @@
-import styles from './headernav.module.css';
+import styles from './bannertop.module.css';
 import Script from 'next/script';
 
-export default function HeaderNav() {
+export default function Bannertop() {
   return (
     <div className={styles.HeaderNav}>
-
-      <div>
-        <div className={styles.top}>
-          <p>
-            <i className="fa fa-whatsapp"></i> Fale por whatsapp: <a href="https://api.whatsapp.com/send?l=pt&phone=5511 996016574">(11) 99601-6574</a>
-          </p>
-          <p>
-            <i className="fa fa-phone"></i> Ligue para nós: <a href="tel:5511 996016574">(11) 99601-6574</a>
-          </p>
-        </div>
-      </div>
-
-      <nav className={`${styles.nav} navbar navbar-expand-lg navbar-dark bg-transparent text-success`}>
-        <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            <img src="/logo01.png" className="d-block w-100" alt="logo" />
-          </a>
-          <button
-            className="navbar-toggler bg-secondary"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav" style={{ marginLeft: "20%" }}>
-              <li className="nav-item">
-                <a className="nav-link" href="/">Início</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/quemsomos">Quem somos</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/contato">Conato</a>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Produtos
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item text-primary hover-text-success" href="/produtos">Todos os produtos</a></li>
-                  <li><a className="dropdown-item text-primary hover-text-success" href="/bracos">Braços e Pinças</a></li>
-                  <li><a className="dropdown-item text-primary" href="/discos">Discos</a></li>
-                  <li><a className="dropdown-item text-primary" href="/eletrodos">Eletrodos</a></li>
-                  <li><a className="dropdown-item text-primary" href="/pinos">Pinos Guia e Buchas</a></li>
-                  <li><a className="dropdown-item text-primary" href="/portaeletrodos">Porta Eletrodos</a></li>
-                  <li><a className="dropdown-item text-primary" href="/shunts">Shunts</a></li>
-                </ul>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/trabalheconosco">Trabalhe Conosco</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
       <div id="carouselExampleCaptions" className="carousel slide my-carousel" data-bs-ride="carousel">
         <div className="carousel-inner">
 

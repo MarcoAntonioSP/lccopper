@@ -1,11 +1,14 @@
+
+import BannerOneimg from "../src/components/banneronepages/BannerOneimg";
 import Footer from "../src/components/footer/Footer";
-import HeaderNav from "../src/components/headerNav/HeaderNav";
+import NavBar from "../src/components/navbar/NavBar";
 import Portaeletrodo from "../src/components/products/Portaeletro";
 
 export default function Page() {
   return (
     <main>
-      <HeaderNav />
+      <NavBar />
+      <BannerOneimg title="Porta Eletrodos" />
       <Portaeletrodo />
       <Footer />
     </main>
