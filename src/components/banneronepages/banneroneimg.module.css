@@ -3,6 +3,7 @@
     height: 400px;
     background-image: url("../../../public/usinagem01.png");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: 0px -490px;
     margin-top: 40px;
     display: flex;
@@ -11,5 +12,24 @@
     justify-content: center;
     color: white;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-top: 220px;
+}
+
+
+@media (max-width: 968px) {
+    .banneroneimg {
+        width: 100%;
+        height: 300px;
+        background-position: center; /* Ajusta a posição da imagem para centralizar em telas menores */
+        background-size: cover; /* Para que a imagem se ajuste ao container */
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banneroneimg {
+        height: 250px;
+        background-position: center;
+        background-size: cover; /* Mantém a imagem preenchendo a tela */
+    }
 }
