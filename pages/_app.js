@@ -26,10 +26,10 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           name="description"
-          content="A LC Copper Metalúrgica LTDA é referência em reposição de solda e usinagem de materiais ferrosos e não ferrosos, atendendo principalmente a indústria automotiva. Com quase 25 anos de experiência, garantimos qualidade e precisão em nossos serviços."
+          content="A LC Copper Metalúrgica Eireli é referência em reposição de solda e usinagem de materiais ferrosos e não ferrosos, atendendo principalmente a indústria automotiva. Com quase 25 anos de experiência, garantimos qualidade e precisão em nossos serviços."
         />
-        <title>LC Copper Metalúrgica LTDA - Soluções em Metalurgia</title>
-        <link rel="canonical" href="http://www.lccopper.com.br/" />
+        <title>LC Copper Metalúrgica Eireli - Soluções em Metalurgia</title>
+        <link rel="canonical" href="http://www.lccopper.com/" />
         <meta name="robots" content="index, follow" />
         <link
           rel="stylesheet"

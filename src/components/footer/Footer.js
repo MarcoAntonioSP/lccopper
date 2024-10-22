@@ -13,7 +13,7 @@ const Footer = () => {
             <div className={`${styles.col} ${styles.description}`}>
               <h3>Quem Somos</h3>
               <p>
-                Com quase 25 anos de experiência, a LC Copper Metalúrgica LTDA é referência em reposição de solda por resistência e usinagem de materiais para a indústria automotiva.
+                Com quase 25 anos de experiência, a LC Copper Metalúrgica Eireli é referência em reposição de solda por resistência e usinagem de materiais para a indústria automotiva.
               </p>
               <div className={styles.socialIcons}>
                 <a href="#" className={styles.facebook}><i className="icofont-facebook"></i></a>
@@ -40,7 +40,7 @@ const Footer = () => {
                 <p>(11) 4676-0398</p>
                 <p>(11) 94023-8626</p>
                 <p>(11) 99601-6574</p>
-                <p><a href="mailto:fernando@lccopper.com.br">fernando@lccopper.com.br</a></p>
+                <p><a href="mailto:fernando@lccopper.com">fernando@lccopper.com</a></p>
               </div>
             </div>
 
@@ -68,7 +68,7 @@ const Footer = () => {
           <div className={styles.row}>
             <div className={`${styles.col} ${styles.copyRight}`}>
               <span style={{ fontSize: '14px', color: '#FFFFFF' }}>
-                LC Copper Metalúrgica LTDA. Desenvolvido por:  
+                LC Copper Metalúrgica Eireli. Desenvolvido por:  
                 <a href="http://www.seusite.com" target="_blank" style={{ color: '#FFFFFF',}}>
                     AceleraçãoWeb
                 </a>

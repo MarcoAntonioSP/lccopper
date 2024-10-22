@@ -100,7 +100,7 @@ export default function Presentation() {
         </div>
 
         <div className={styles.callToAction}>
-          <a href="https://api.whatsapp.com/send?l=pt&phone=5511996016574" className={styles.ctaButton}>
+          <a href="https://api.whatsapp.com/send?l=pt&phone=5511996016574" target="_blank" className={styles.ctaButton}>
             Entre em Contato
           </a>
         </div>
