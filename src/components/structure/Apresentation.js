@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
-import styles from "./ApStructure.module.css";
+import styles from './apstructure.module.css'
 
 export default function ApresentationStructure() {
   // Usamos o hook useInView para monitorar se o componente está na viewport
