@@ -1,22 +1,31 @@
 import styles from './navbar.module.css';
 import Script from 'next/script';
+import { useState, useEffect } from "react";
 
 export default function Bannertop() {
-  return (
-    <div className={styles.HeaderNav}>
+  const [isScrolled, setIsScrolled] = useState(false);
 
-      <div>
-        <div className={styles.top}>
-          <p>
-            <i className="fa fa-whatsapp"></i> Fale por whatsapp: <a href="https://api.whatsapp.com/send?l=pt&phone=5511996016574">(11) 99601-6574</a>
-          </p>
-          <p>
-            <i className="fa fa-phone"></i> Ligue para nós: <a href="tel:551146760398">(11) 4676-0398</a>
-          </p>
-        </div>
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0); // Verifica se rolou para baixo
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <div className={`${styles.HeaderNav} ${isScrolled ? styles.scrolled : ''}`}>
+      {/* Classe 'invisible' vai esconder o elemento ao rolar */}
+      <div className={`${styles.top} ${isScrolled ? styles.invisible : ''}`}>
+        <p>
+          <i className="fa fa-whatsapp"></i> Fale por whatsapp: <a href="https://api.whatsapp.com/send?l=pt&phone=5511996016574">(11) 99601-6574</a>
+        </p>
+        <p>
+          <i className="fa fa-phone"></i> Ligue para nós: <a href="tel:551146760398">(11) 4676-0398</a>
+        </p>
       </div>
 
-      <nav className={`${styles.nav} navbar navbar-expand-lg navbar-dark bg-transparent text-success`}>
+      <nav className={`navbar navbar-expand-lg navbar-dark bg-white text-success ${isScrolled ? 'scrolled-navbar' : ''}`}>
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img src="/logo01.png" className="d-block w-100" alt="logo" />
@@ -35,15 +44,14 @@ export default function Bannertop() {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav" style={{ marginLeft: "20%" }}>
               <li className="nav-item">
-                <a className="nav-link" href="/">Início</a>
+                <a className="nav-link text-dark" href="/">Início</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/quemsomos">Quem somos</a>
+                <a className="nav-link text-dark" href="/quemsomos">Quem Somos</a>
               </li>
-              
               <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle text-dark"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -62,15 +70,19 @@ export default function Bannertop() {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contato">Contato</a>
+                <a className="nav-link text-dark" href="/contato">Contato</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/trabalheconosco">Trabalhe Conosco</a>
+                <a className="nav-link text-dark" href="/trabalheconosco">Trabalhe Conosco</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+
+      <a href="https://wa.me/5511996016574?text= Olá, tudo bem?" target="_blank">
+        <img src="/whatsAppicone.png" className={styles.whatsicon} alt="" />
+      </a>
 
       <Script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

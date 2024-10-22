@@ -1,28 +1,37 @@
-/*------estilos-navBar--------- */
+/*------ Estilos NavBar --------- */
+
+/* Estilos para o elemento .top */
 .top {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #003b8c;
+    background-color: #001c42;
     height: 44px;
     text-align: center;
     gap: 50px;
-    color: white;
     font-weight: 600;
     font-size: 16px;
+    color: white;
+    z-index: 2001; /* Garantir que fique acima do navbar */
 }
 
-.top p {
-    margin-top: 8px;
-}
-
+/* Estilos gerais para HeaderNav */
 .HeaderNav {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 120px; /* Definindo explicitamente a altura do banner fixo */
     width: 100%;
+    font-weight: 500;
+    z-index: 2000;
 }
-
+.HeaderNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+/* Estilos para a barra de navegação */
 .nav {
     display: flex;
     flex-direction: column;
@@ -32,8 +41,9 @@
 
 .nav a {
     color: #1a0a0a;
-    font-size: 18px; /* Diminui um pouco para um visual mais leve */
+    font-size: 18px;
     font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .nav a:hover {
@@ -44,4 +54,65 @@
     background-color: rgba(0, 123, 255, 0.1); /* Estilo para itens de dropdown */
 }
 
+/* Estilos do ícone do WhatsApp */
+.whatsicon {
+    width: 80px;
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.whatsicon:hover {
+    transform: scale(1.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.39);
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Ajustes gerais para o Navbar */
+.navbar {
+    padding: 0; /* Evita o padding indesejado */
+    background-color: white;
+    transition: background-color 0.3s ease; /* Transição suave */
+    z-index: 2000;
+}
+
+/* Navbar com opacidade de 30% quando rolada para baixo */
+.scrolledNavbar {
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo branco com 30% de opacidade */
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilo da barra de navegação quando rolada */
+.scrolled {
+    background-color: #f1f1f100; /* Exemplo de cor clara quando rolado */
+}
+
+/* Classe invisível para ocultar o elemento */
+.invisible {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* Ajuste da navbar para ser fixa e sempre no topo */
+
+
+/* Se o usuário rolou para baixo, essa classe irá esconder o elemento .top */
+.scrolled .top {
+    visibility: hidden; /* Torna invisível */
+    opacity: 0; /* Reduz a opacidade */
+    height: 0; /* Reduz a altura a 0 */
+    overflow: hidden; /* Garante que não ocupe espaço */
+}
+
+/* Estilo da barra de navegação fixa */
+.scrolled-navbar {
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo branco com 30% de opacidade */
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}

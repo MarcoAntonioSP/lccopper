@@ -36,15 +36,13 @@ function MyApp({ Component, pageProps }) {
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
         />
       </Head>
+
       <Component {...pageProps} />
-      <Script 
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-      />
-      <Script 
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"  
-      />
+
+      {/* Carregamento dos scripts do Bootstrap (sem a necessidade de jQuery ou Popper separadamente) */}
       <Script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        strategy="afterInteractive"
       />
     </ChakraProvider>
   );
