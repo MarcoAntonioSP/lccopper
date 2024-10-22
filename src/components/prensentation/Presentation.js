@@ -1,8 +1,17 @@
+import { useInView } from "react-intersection-observer";
+import { useState, useEffect } from "react";
 import styles from "./presentation.module.css";
 
 export default function Presentation() {
+  const { ref, inView } = useInView({ threshold: 0.15 });
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setAnimate(inView);
+  }, [inView]);
+
   return (
-    <div className={styles.serviceBgArea}>
+    <div ref={ref} className={`${styles.serviceBgArea} ${animate ? styles.visible : ""}`}>
       <div className={`container ${styles.container}`}>
         <div className="row">
           <div className={styles.title}>
@@ -14,7 +23,6 @@ export default function Presentation() {
 
         {/* Service Area */}
         <div className="row">
-          {/* Serviço 1 */}
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div className={styles.serviceItem}>
               <div className={styles.textBox}>

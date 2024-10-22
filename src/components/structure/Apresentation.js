@@ -1,45 +1,50 @@
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
-import styles from './apstructure.module.css'
+import styles from './apstructure.module.css';
+import Image from "next/image";
 
 export default function Apresentation() {
-  // Usamos o hook useInView para monitorar se o componente está na viewport
-  const { ref, inView } = useInView({
-    threshold: 0.3, // Considera o componente visível quando 30% da sua área estiver visível
-  });
-
+  const { ref, inView } = useInView({ threshold: 0.3 });
   const [animate, setAnimate] = useState(false);
 
-  // Sempre que o componente entrar ou sair da viewport, reiniciamos a animação
   useEffect(() => {
-    if (inView) {
-      setAnimate(true); // Quando entrar na viewport, iniciar animação
-    } else {
-      setAnimate(false); // Quando sair da viewport, deixar o componente invisível
-    }
-  }, [inView]); // Executa sempre que o estado de visibilidade mudar
+    setAnimate(inView);
+  }, [inView]);
 
   return (
     <div
       ref={ref}
-      className={`${styles.apstructurest} ${animate ? styles.visible : ""}`}
+      className={`${styles.apstructurest} ${animate ? styles.visible : ""} container-fluid py-5`}
     >
-      <h1 className={styles.title}>A EMPRESA</h1>
-      <p className={styles.description}>
-        A LC Copper é uma empresa especializada na oferta abrangente de uma
-        vasta gama de produtos e serviços voltados para o setor de soldagem e
-        automação industrial. Nosso portfólio inclui uma variedade de itens
-        essenciais, como Eletrodos, Porta Eletrodos, Braços, Cabos de Solda,
-        Barramentos Fixos e Flexíveis, Pinças e Dispositivos para soldagem por
-        resistência e projeção. Além de fornecer produtos de alta qualidade,
-        também oferecemos serviços de consultoria, nacionalização de peças de
-        Robô e desenvolvimento de produtos. Com um compromisso inabalável
-        com a excelência e a inovação, buscamos constantemente atender às
-        necessidades em constante evolução de nossos clientes, garantindo
-        soluções eficazes e sob medida para cada desafio. A LC Copper está
-        pronta para ser sua parceira confiável no avanço e na otimização de suas
-        operações industriais.
-      </p>
+      <div className="row align-items-center justify-content-center">
+        <div className="col-md-6 d-none d-md-block text-center">
+          {/* Imagem ficará oculta em dispositivos móveis com "d-none d-md-block" */}
+          <Image
+            className={`${styles.imgleft} img-fluid`}
+            src="/trabalhe01.jpeg"
+            alt="Logo lccopper"
+            width={600}
+            height={800}
+          />
+        </div>
+        <div className="col-md-6 col-12 text-center text-md-left">
+          <h4 className="text-warning">Eficiência, Inovação, Resultados</h4>
+          <h1 className={`${styles.title} text-primary`}>Soluções Inovadoras em Soldagem e Automação Industrial</h1>
+          <h2 className="text-secondary">Produtos de alta qualidade e serviços especializados para otimizar suas operações</h2>
+          <p className={`${styles.description} text-muted`}>
+            A LC Copper é uma empresa especializada na oferta abrangente de uma
+            vasta gama de produtos e serviços voltados para o setor de soldagem e
+            automação industrial. Nosso portfólio inclui uma variedade de itens
+            essenciais, como Eletrodos, Porta Eletrodos, Braços, Cabos de Solda, Barramentos
+            Fixos e Flexíveis, Pinças e Dispositivos para soldagem por resistência e projeção.
+          </p>
+          <h5 className="text-primary ">Clique no botão abaixo e entre em contato com a nossa equipe para conhecer nossas soluções personalizadas!</h5>
+          <a href="https://api.whatsapp.com/send?l=pt&phone=5511996016574" target="_blank" className={styles.ctaButton}>
+          <button className="btn btn-primary btn-lg mt-4">Clique aqui</button>
+          </a>
+          
+        </div>
+      </div>
     </div>
   );
 }

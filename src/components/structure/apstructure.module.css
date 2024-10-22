@@ -1,40 +1,38 @@
 .apstructurest {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  opacity: 0; /* Começa invisível */
-  transition: opacity 2s ease-out; /* Alterado para 2 segundos */
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 2s ease-out;
 }
 
 .visible {
-  opacity: 1; /* Torna-se visível quando a animação for disparada */
+  opacity: 1;
+}
+
+.imgleft {
+  border-radius: 15px;
+  height: auto;
 }
 
 .title {
   font-size: 48px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color: #2d2d2d;
   margin-bottom: 20px;
-  transform: translateY(20px); /* Começa deslocado */
-  animation: fadeInUp 0.8s ease-out forwards; /* Alterado para 2 segundos */
-  animation-delay: 0.5s; /* Aguarda um pouco para animar */
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.8s;
 }
 
 .description {
   font-size: 18px;
-  color: #4e4e4e;
   line-height: 1.8;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  transform: translateY(20px); /* Começa deslocado */
-  animation: fadeInUp 0.8s ease-out forwards; /* Alterado para 2 segundos */
-  animation-delay: 1s; /* Aguarda um pouco para animar */
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 1s;
 }
 
 @keyframes fadeInUp {
@@ -49,7 +47,7 @@
 }
 
 /* Responsividade */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .apstructurest {
     padding: 30px 15px;
   }
@@ -61,5 +59,9 @@
 
   .description {
     font-size: 16px;
+  }
+
+  .imgleft {
+    display: none; /* Imagem ficará invisível em dispositivos móveis */
   }
 }
