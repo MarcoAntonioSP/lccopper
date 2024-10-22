@@ -2,10 +2,10 @@ import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
 import styles from './apstructure.module.css'
 
-export default function ApresentationStructure() {
+export default function Apresentation() {
   // Usamos o hook useInView para monitorar se o componente está na viewport
   const { ref, inView } = useInView({
-    threshold: 0.5, // Considera o componente visível quando 50% da sua área estiver visível
+    threshold: 0.3, // Considera o componente visível quando 30% da sua área estiver visível
   });
 
   const [animate, setAnimate] = useState(false);

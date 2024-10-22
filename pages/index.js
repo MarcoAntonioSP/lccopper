@@ -2,7 +2,7 @@ import NavBar from "../src/components/navbar/NavBar";
 import Bannertop from "../src/components/Bannertop/Bannertop";
 import Presentation from "../src/components/prensentation/Presentation";
 import Structure from "../src/components/structure/Structure";
-import Apresentationstructure from "../src/components/structure/Apresentation";
+import Apresentation from "../src/components/structure/Apresentation";
 import Footer from "../src/components/footer/Footer";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <NavBar />
       <Bannertop />
       <Presentation />
-      <Apresentationstructure />
+      <Apresentation />
       <Structure />
       <Footer />
     </div>
