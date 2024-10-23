@@ -3,8 +3,8 @@ import Bannertop from "../src/components/Bannertop/Bannertop";
 import Presentation from "../src/components/prensentation/Presentation";
 import Structure from "../src/components/structure/Structure";
 import Apresentation from "../src/components/structure/Apresentation";
+import Faqitens from "../src/components/faqitens/Faqitens";
 import Footer from "../src/components/footer/Footer";
-import Faqitens from "../src/components/faqitens/faqitens";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <NavBar />
       <Bannertop />
       <Presentation />
-      <Apresentation />
+      <Apresentation /> 
       <Structure />
       <Faqitens />
       <Footer />
