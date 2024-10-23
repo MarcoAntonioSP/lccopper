@@ -1,7 +1,7 @@
 import styles from './faq.module.css';
 import Image from 'next/image';
 
-export default function Faq() {
+export default function Faqitens () {
     return (
         <div className={styles.faqContainer}>
             <div className={`${styles.questions} shadow-lg my-4 p-3 rounded`}>

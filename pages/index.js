@@ -4,7 +4,7 @@ import Presentation from "../src/components/prensentation/Presentation";
 import Structure from "../src/components/structure/Structure";
 import Apresentation from "../src/components/structure/Apresentation";
 import Footer from "../src/components/footer/Footer";
-import Faq from "../src/components/faq/faq";
+import Faqitens from "../src/components/faqitens/faqitens";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <Presentation />
       <Apresentation />
       <Structure />
-      <Faq />
+      <Faqitens />
       <Footer />
     </div>
   );
