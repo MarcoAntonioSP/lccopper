@@ -4,9 +4,9 @@ import Image from 'next/image';
 export default function Faq() {
     return (
         <div className={styles.faqContainer}>
-            <div className={`${styles.questions} shadow-lg my-4 p-3 rounded-10`}>
+            <div className={`${styles.questions} shadow-lg my-4 p-3 rounded`}>
                 <div className="text-center">
-                    <h3 className={`fadeIn hidden zoom-in hidden`}>Perguntas Frequentes</h3>
+                    <h3 className="fadeIn">Perguntas Frequentes</h3>
                 </div>
                 <div className="row justify-content-around align-items-center">
                     <div className="col-8 col-md-5 text-center">
@@ -19,7 +19,7 @@ export default function Faq() {
                             height={400}
                         />
                     </div>
-                    <div className={`my-2 col-12 col-md-7 text-center`}>
+                    <div className="my-2 col-12 col-md-7 text-center">
                         <div className="accordion" id="accordionExample">
                             {[
                                 {
@@ -61,7 +61,7 @@ export default function Faq() {
                                         className={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`} 
                                         data-bs-parent="#accordionExample"
                                     >
-                                        <div className={`${styles.accordionBody}`}>
+                                        <div className={styles.accordionBody}>
                                             <strong>{item.answer}</strong>
                                         </div>
                                     </div>
