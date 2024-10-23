@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import styles from "./presentation.module.css";
 
 export default function Presentation() {
-  const { ref, inView } = useInView({ threshold: 0.15 });
+  const { ref, inView } = useInView({ threshold: 0.09 });
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {

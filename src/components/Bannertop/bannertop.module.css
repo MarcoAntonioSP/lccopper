@@ -1,44 +1,4 @@
 
-
-.HeaderNav {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    max-height: 1000px;
-    margin-top: 100px;
-    margin-bottom: 150px;
-}
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    z-index: 10;
-    width: 100%;
-    background-color: rgba(0, 0, 255, 0);
-
-}
-
-.testes {
-    height: 500px;
-}
-
-.nav a {
-    color: rgb(26, 10, 10);
-    font-size: 20px;
-    font-weight: 600;
-    text-shadow: 1px 1px 1px #00000074;
-}
-
-.nav a:hover {
-    color: rgb(1, 9, 14);
-    text-shadow: 0 0 10px #03bcf453, 0 0 20px #03bcf46c, 0 0 40px #03bcf46a, 0 0 80px #03bcf459, 0 0 160px #03bcf483;
-}
-
-.textlist a {
-    color: #5e595927;
-    margin-left: 200px;
-}
-
 .CarouselItem1 {
     position: relative;
 

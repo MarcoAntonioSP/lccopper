@@ -69,7 +69,7 @@ const Footer = () => {
             <div className={`${styles.col} ${styles.copyRight}`}>
               <span style={{ fontSize: '14px', color: '#FFFFFF' }}>
                 LC Copper Metalúrgica Eireli. Desenvolvido por:  
-                <a href="http://www.seusite.com" target="_blank" style={{ color: '#FFFFFF',}}>
+                <a href="#" target="_blank" style={{ color: '#FFFFFF',}}>
                     AceleraçãoWeb
                 </a>
               </span>
