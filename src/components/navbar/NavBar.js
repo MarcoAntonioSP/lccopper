@@ -1,6 +1,7 @@
 import styles from './navbar.module.css';
 import Script from 'next/script';
 import { useState, useEffect } from "react";
+import Link from 'next/link'; // Import Link
 
 export default function Bannertop() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,9 +28,9 @@ export default function Bannertop() {
 
       <nav className={`navbar navbar-expand-lg navbar-dark bg-white text-success ${isScrolled ? 'scrolled-navbar' : ''}`}>
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <Link href="/" className="navbar-brand">
             <img src="/logo01.png" className="d-block w-100" alt="logo" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler bg-secondary"
             type="button"
@@ -44,13 +45,13 @@ export default function Bannertop() {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav" style={{ marginLeft: "20%" }}>
               <li className="nav-item">
-                <a className="nav-link text-dark" href="/">Início</a>
+                <Link href="/" className="nav-link text-dark">Início</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark" href="/quemsomos">Quem Somos</a>
+                <Link href="/quemsomos" className="nav-link text-dark">Quem Somos</Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link dropdown-toggle text-dark"
                   href="#"
                   role="button"
@@ -58,29 +59,29 @@ export default function Bannertop() {
                   aria-expanded="false"
                 >
                   Produtos
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item text-primary hover-text-success" href="/produtos">Todos os produtos</a></li>
-                  <li><a className="dropdown-item text-primary hover-text-success" href="/bracos">Braços e Pinças</a></li>
-                  <li><a className="dropdown-item text-primary" href="/discos">Discos</a></li>
-                  <li><a className="dropdown-item text-primary" href="/eletrodos">Eletrodos</a></li>
-                  <li><a className="dropdown-item text-primary" href="/pinos">Pinos Guia e Buchas</a></li>
-                  <li><a className="dropdown-item text-primary" href="/portaeletrodos">Porta Eletrodos</a></li>
-                  <li><a className="dropdown-item text-primary" href="/shunts">Shunts</a></li>
+                  <li><Link className="dropdown-item text-primary hover-text-success" href="/produtos">Todos os produtos</Link></li>
+                  <li><Link className="dropdown-item text-primary hover-text-success" href="/bracos">Braços e Pinças</Link></li>
+                  <li><Link className="dropdown-item text-primary" href="/discos">Discos</Link></li>
+                  <li><Link className="dropdown-item text-primary" href="/eletrodos">Eletrodos</Link></li>
+                  <li><Link className="dropdown-item text-primary" href="/pinos">Pinos Guia e Buchas</Link></li>
+                  <li><Link className="dropdown-item text-primary" href="/portaeletrodos">Porta Eletrodos</Link></li>
+                  <li><Link className="dropdown-item text-primary" href="/shunts">Shunts</Link></li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark" href="/contato">Contato</a>
+                <Link href="/contato" className="nav-link text-dark">Contato</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark" href="/trabalheconosco">Trabalhe Conosco</a>
+                <Link href="/trabalheconosco" className="nav-link text-dark">Trabalhe Conosco</Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <a href="https://wa.me/5511996016574?text= Olá, tudo bem?" target="_blank">
+      <a href="https://wa.me/5511996016574?text= Olá, tudo bem?" target="_blank" rel="noopener noreferrer">
         <img src="/whatsAppicone.png" className={styles.whatsicon} alt="" />
       </a>
 

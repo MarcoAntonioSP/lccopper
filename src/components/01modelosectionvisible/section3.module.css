@@ -1,0 +1,32 @@
+.apstructurest {
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+}
+
+.visible {
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .apstructurest {
+    padding: 30px 15px;
+  }
+
+}
+
+

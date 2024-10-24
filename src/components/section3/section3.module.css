@@ -1,0 +1,82 @@
+.apstructurest {
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.146);
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+  margin-top: 50px;
+}
+
+.visible {
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .apstructurest {
+    padding: 30px 15px;
+  }
+
+}
+
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c0392b; /* Vermelho */
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  font-weight: semi-bold;
+  color: #333; /* Cor neutra */
+  margin-bottom: 1rem;
+}
+
+.section-text {
+  font-size: 1rem;
+  color: #555; /* Cor de texto suave */
+  line-height: 1.5;
+}
+
+.section-highlight {
+  font-weight: bold;
+  color: #27ae60; /* Verde */
+}
+
+.btn {
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #2980b9; /* Azul */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #3498db; /* Azul claro */
+}
+
+.btn-secondary {
+  background-color: #bdc3c7; /* Cinza */
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #95a5a6; /* Cinza escuro */
+}
+
+.shadow {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

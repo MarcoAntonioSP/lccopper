@@ -5,6 +5,7 @@ import styles from './section2.module.css'; // Corrigido aqui
 
 const Section2 = () => {
   return (
+
     <div className="container mt-5">
       <div className="row align-items-center" style={{ minHeight: '550px' }}>
         {/* Lado esquerdo */}
@@ -46,6 +47,7 @@ const Section2 = () => {
           />
         </div>
       </div>
+      
     </div>
   );
 };

@@ -29,9 +29,9 @@ export default function Contato() {
               <br />
               (11) 99601-6574
             </p>
-            <a href="mailto:fernando@lccopper.com">
+            <Link href="mailto:fernando@lccopper.com">
               fernando@lccopper.com
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.contatoItem}>
@@ -44,17 +44,16 @@ export default function Contato() {
             />
           </div>
           <div>
-          <br />
-          <br />
-          <h3>Escritório e Fábrica:</h3>
-          <p>Rua São João, 200 | Jardim Soeiro</p>
-          <p>Ferraz de Vasconcelos - SP</p>
-          <p>CEP 08540-200</p>
-        </div>
+            <br />
+            <br />
+            <h3>Escritório e Fábrica:</h3>
+            <p>Rua São João, 200 | Jardim Soeiro</p>
+            <p>Ferraz de Vasconcelos - SP</p>
+            <p>CEP 08540-200</p>
+          </div>
         </div>
       </div>
-      <div className={styles.contatoItem}>
-      </div>
+      <div className={styles.contatoItem}></div>
       <form className={styles.form}>
         <div className={styles.formGroup}>
           <label htmlFor="name" className={styles.formLabel}>

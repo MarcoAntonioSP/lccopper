@@ -1,5 +1,6 @@
 import styles from './bannertop.module.css';
 import Script from 'next/script';
+import Link from 'next/link';
 
 export default function Bannertop() {
   return (
@@ -18,8 +19,17 @@ export default function Bannertop() {
               </p>
               <div className={styles.buttonsbanner}>
                 <ul className={styles.listbutton}>
-                  <li> <a className={styles.textcarouselson3} href="https://api.whatsapp.com/send?l=pt&phone=5511996016574" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-success">Solicite um Orçamento</button></a></li>
-                  <li> <a className={styles.textcarouselson4} href="tel:551146760398" target="_blank" rel="noopener noreferrer"><i className="fa fa-phone" style={{ marginLeft: "10px", marginRight: "4px" }}></i><button type="button" className="btn btn-outline-primary">(11) 4676-0398</button></a></li>
+                  <li> 
+                    <Link href="https://api.whatsapp.com/send?l=pt&phone=5511996016574" target="_blank" rel="noopener noreferrer">
+                      <button type="button" className="btn btn-success">Solicite um Orçamento</button>
+                    </Link>
+                  </li>
+                  <li> 
+                    <Link href="tel:551146760398" target="_blank" rel="noopener noreferrer">
+                      <i className="fa fa-phone" style={{ marginLeft: "10px", marginRight: "4px" }}></i>
+                      <button type="button" className="btn btn-outline-primary">(11) 4676-0398</button>
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -29,14 +39,18 @@ export default function Bannertop() {
             <img src="trabalhe01.jpeg" className="d-block w-100" alt="Qualidade e Inovação em Soluções de Soldagem" />
             <div className={styles.textcarousel}>
               <h5 className={styles.textcarouselson}>
-                Experiência de Quase 25 Anos em<span className='fst-italic break'>Reposição de Solda e Usinagem</span>
+                Experiência de Quase 25 Anos em <span className='fst-italic break'>Reposição de Solda e Usinagem</span>
               </h5>
               <p className={styles.textcarouselson2}>
                 Somos o parceiro ideal para sua indústria automotiva. Solicite um orçamento e descubra!
               </p>
               <div className={styles.buttonsbanner}>
                 <ul className={styles.listbutton}>
-                  <li> <a className={styles.textcarouselson3} href="/produtos" rel="noopener noreferrer"><button type="button" className="btn btn-lg btn-primary">Conheça Nossas Soluções</button></a></li>
+                  <li> 
+                    <Link href="/produtos" rel="noopener noreferrer">
+                      <button type="button" className="btn btn-lg btn-primary">Conheça Nossas Soluções</button>
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -46,15 +60,24 @@ export default function Bannertop() {
             <img src="usinagem01.png" className="d-block w-100" alt="Qualidade e Inovação em Soluções de Soldagem" />
             <div className={styles.textcarousel}>
               <h5 className={styles.textcarouselson}>
-              Compromisso Inabalável com a <span className='fst-italic break'>Excelência em Nossos Produtos</span>
+                Compromisso Inabalável com a <span className='fst-italic break'>Excelência em Nossos Produtos</span>
               </h5>
               <p className={styles.textcarouselson2}>
-              Somos o parceiro ideal para sua indústria automotiva. Solicite um orçamento e descubra!
+                Somos o parceiro ideal para sua indústria automotiva. Solicite um orçamento e descubra!
               </p>
               <div className={styles.buttonsbanner}>
                 <ul className={styles.listbutton}>
-                  <li> <a className={styles.textcarouselson3} href="https://api.whatsapp.com/send?l=pt&phone=5511996016574" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-success">Solicite um Orçamento</button></a></li>
-                  <li> <a className={styles.textcarouselson4} href="tel:551146760398" target="_blank" rel="noopener noreferrer"><i className="fa fa-phone" style={{ marginLeft: "10px", marginRight: "4px" }}></i><button type="button" className="btn btn-outline-primary">(11) 4676-0398</button></a></li>
+                  <li> 
+                    <Link href="https://api.whatsapp.com/send?l=pt&phone=5511996016574" target="_blank" rel="noopener noreferrer">
+                      <button type="button" className="btn btn-success">Solicite um Orçamento</button>
+                    </Link>
+                  </li>
+                  <li> 
+                    <Link href="tel:551146760398" target="_blank" rel="noopener noreferrer">
+                      <i className="fa fa-phone" style={{ marginLeft: "10px", marginRight: "4px" }}></i>
+                      <button type="button" className="btn btn-outline-primary">(11) 4676-0398</button>
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -70,7 +93,6 @@ export default function Bannertop() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-
 
       <Script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

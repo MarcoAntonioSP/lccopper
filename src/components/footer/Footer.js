@@ -1,6 +1,5 @@
 import styles from "./footerstyle.module.css";
 import Link from "next/link";
-import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -16,9 +15,9 @@ const Footer = () => {
                 Com quase 25 anos de experiência, a LC Copper Metalúrgica Eireli é referência em reposição de solda por resistência e usinagem de materiais para a indústria automotiva.
               </p>
               <div className={styles.socialIcons}>
-                <a href="#" className={styles.facebook}><i className="icofont-facebook"></i></a>
-                <a href="#" className={styles.twitter}><i className="icofont-twitter"></i></a>
-                <a href="#" className={styles.linkedin}><i className="icofont-linkedin"></i></a>
+                <Link href="#"><i className="icofont-facebook"></i></Link>
+                <Link href="#"><i className="icofont-twitter"></i></Link>
+                <Link href="#"><i className="icofont-linkedin"></i></Link>
               </div>
             </div>
 
@@ -40,7 +39,7 @@ const Footer = () => {
                 <p>(11) 4676-0398</p>
                 <p>(11) 94023-8626</p>
                 <p>(11) 99601-6574</p>
-                <p><a href="mailto:fernando@lccopper.com">fernando@lccopper.com</a></p>
+                <p><Link href="mailto:fernando@lccopper.com">fernando@lccopper.com</Link></p>
               </div>
             </div>
 
@@ -69,12 +68,13 @@ const Footer = () => {
             <div className={`${styles.col} ${styles.copyRight}`}>
               <span style={{ fontSize: '14px', color: '#FFFFFF' }}>
                 LC Copper Metalúrgica Eireli. Desenvolvido por:  
-                <a href="#" target="_blank" style={{ color: '#FFFFFF',}}>
+                <Link href="#" target="_blank" style={{ color: '#FFFFFF' }}>
                     AceleraçãoWeb
-                </a>
+                </Link>
               </span>
             </div>
             <div className={`${styles.col} ${styles.footerMenu}`}>
+              {/* Uncomment if needed */}
               {/* <ul>
                 <li><Link href="/politica-de-privacidade">Política de Privacidade</Link></li>
                 <li><Link href="/termos-de-servico">Termos de Serviço</Link></li>

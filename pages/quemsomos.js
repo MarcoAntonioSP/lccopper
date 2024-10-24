@@ -3,6 +3,7 @@ import Footer from "../src/components/footer/Footer";
 import QuemSomos from "../src/components/quemsomoscomp/Quemsomoscomp";
 import Section1 from "../src/components/section1/Section1";
 import Section2 from "../src/components/section2/Section2";
+import Section3 from "../src/components/section3/Section3";
 import BannerOneimg from "../src/components/banneronepages/BannerOneimg";
 
 export default function Page() {
@@ -11,7 +12,7 @@ export default function Page() {
       <NavBar />
       <BannerOneimg title="Quem Somos"/>
       <Section1 />
-      <Section2 />
+      <Section3 />
       <QuemSomos />
       <Footer />
     </main>
