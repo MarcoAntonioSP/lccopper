@@ -1,72 +1,33 @@
+.catalogContainer {
+  margin: 100px auto;
+  text-align: center;
+}
+
 .catalogTitle {
   font-size: 35px;
-  margin-bottom: 400px;
-  margin-top: 200px;
-  padding: -150px;
   color: #0c72c6;
-  text-align: center;
-  height: auto;
-}
-.containerprod {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 500px;
-  background-color: white;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding: 10px;
+  margin-bottom: 40px;
 }
 
-.productbox {
-  padding: 10px;
-  overflow: hidden;
+.productCard {
+  border: none;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-  margin: 10px;
-  flex: 0 0 calc(30% - 20px); /* Usando flex para garantir que os elementos ocupem espaço igualmente e com uma margem entre eles */
-  position: relative; /* Para o Image e productInfo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.productbox:hover {
-  transform: scale(1.1); /* Aumenta a escala da imagem em 20% */
-  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+.productCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.productInfo {
-  position: absolute;
-  font-size: 15px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-top: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
+.productImage {
+  border-radius: 10px 10px 0 0; /* Rounded corners for the image */
 }
 
 @media (max-width: 768px) {
-  .productInfo {
-    position: absolute;
-    font-size: 10 px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 0px;
-  }
-  .productbox {
-    height: 160px;
-    flex-basis: calc(35% - 40px); /* Dois itens por linha em telas menores */
-    margin-bottom: 50px;
-  }
   .catalogTitle {
     font-size: 25px;
-    margin-bottom: 0px;
-    margin-top: 215px;
-    padding: -150px;
-    text-align: center;
+    margin-bottom: 20px;
   }
 }

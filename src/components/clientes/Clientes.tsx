@@ -1,11 +1,12 @@
 import styles from "./cliente.module.css";
+import Link from "next/link"; // Adicionei o Link do Next.js
 
 export default function Clientes() {
   return (
     <div className={styles.container}>
       {/* Fornecedor 1 */}
       <section className={styles.section}>
-        <h2 className={styles.title}>LC Copper: Construindo Parceiras de Sucesso</h2>
+        <h2 className={styles.title}>Construindo Parceiras de Sucesso</h2>
         <p className={styles.paragraph}>
           Na LC Copper, acreditamos que o sucesso do cliente é o nosso sucesso. Por isso, construímos relações fortes e duradouras com nossos parceiros, oferecendo soluções personalizadas e inovadoras que impulsionam seus negócios.
         </p>
@@ -17,21 +18,29 @@ export default function Clientes() {
 
       {/* Seção com destaques do fornecedor 1 */}
       <section className={styles.section}>
-        <p> Nossos clientes encotraram na LC Copper o parceiro ideal para a construção de seus projetos. Nossa equipe de engenheiros desenvolveram soluções inovadoras e personalizadas para cada cliente, impulsionando o crescimento de suas empresas e elevando os seus padrões de qualidade.</p><br />
+        <p>Nossos clientes encontraram na LC Copper o parceiro ideal para a construção de seus projetos. Nossa equipe de engenheiros desenvolveu soluções inovadoras e personalizadas para cada cliente, impulsionando o crescimento de suas empresas e elevando os seus padrões de qualidade.</p>
+        <br />
         <div className={styles.grid}>
           <div className={styles.box}>
-            <img src="/clientesleft.png" alt="adasdasd" />
+            <img src="/clientesleft.png" alt="Imagem à esquerda" className="img-fluid" />
           </div>
           <div className={styles.box}>
-            <img src="/clientesright.png" alt="adasdasd" />
+            <img src="/clientesright.png" alt="Imagem à direita" className="img-fluid" />
           </div>
-          {/* Adicione mais boxes para outras características */}
         </div>
       </section>
 
-      {/* Repita a estrutura para outros fornecedores */}
-      {/* ... */}
-
+      {/* Chamada para Ação */}
+      <section className="text-center mt-5">
+        <h3 className="text-primary">Pronto para fazer parte da nossa rede de clientes?</h3>
+        <p className="text-muted">Entre em contato e descubra como podemos impulsionar o sucesso do seu projeto com soluções personalizadas e inovadoras.</p>
+        
+        <Link href="https://api.whatsapp.com/send?l=pt&phone=5511996016574" target="_blank" passHref>
+          <button className="btn btn-primary btn-lg mt-3">
+            Fale com nossa equipe
+          </button>
+        </Link>
+      </section>
     </div>
   );
 }

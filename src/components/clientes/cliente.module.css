@@ -5,12 +5,17 @@
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 230px;
+  margin-top: 30px;
 }
 
 .section {
   margin-bottom: 2rem;
 }
+
+.section p {
+  font-weight: 600;
+}
+
 
 .title {
   font-size: 2.5rem;

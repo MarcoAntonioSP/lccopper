@@ -18,9 +18,8 @@ export default function Section3() {
       ref={ref}
       className={`${styles.apstructurest} ${animate ? styles.visible : ""} container-fluid py-5`}
     >
-
       <div className="container mt-5">
-        <div className="row align-items-center" style={{ minHeight: '550px' }}>
+        <div className="row align-items-center" style={{ minHeight: '250px' }}>
           {/* Lado esquerdo */}
           <div className="col-md-6">
             <h2 className="section-title">Apresentação da LC Copper</h2>

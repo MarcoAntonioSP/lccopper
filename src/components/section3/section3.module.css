@@ -4,7 +4,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.146);
   opacity: 0;
   transition: opacity 1.5s ease-out;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .visible {

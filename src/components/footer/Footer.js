@@ -28,6 +28,7 @@ const Footer = () => {
                 <li><Link href="/quemsomos">Quem somos</Link></li>
                 <li><Link href="/produtos">Produtos</Link></li>
                 <li><Link href="/contato">Contato</Link></li>
+                <li><Link href="/trabalheconosco">Trabalhe Conosco</Link></li>
               </ul>
             </div>
 
