@@ -36,7 +36,7 @@ export default function Section1() {
         };
 
         const observer = new IntersectionObserver(handleIntersection, {
-            threshold: window.innerWidth < 768 ? 0.1 : 0.5,
+            threshold: window.innerWidth < 768 ? 0.5 : 0.5,
         });
 
         if (sectionRef.current) {

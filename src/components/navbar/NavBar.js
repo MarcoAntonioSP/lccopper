@@ -82,7 +82,7 @@ export default function Bannertop() {
       </nav>
 
       <a href="https://wa.me/5511996016574?text= Olá, tudo bem?" target="_blank" rel="noopener noreferrer">
-        <img src="/whatsAppicone.png" className={styles.whatsicon} alt="" />
+        <img src="/whatsiconn.webp" className={styles.whatsicon} alt="" />
       </a>
 
       <Script

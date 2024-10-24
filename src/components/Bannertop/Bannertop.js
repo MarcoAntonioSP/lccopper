@@ -57,7 +57,7 @@ export default function Bannertop() {
           </div>
 
           <div className="carousel-item ">
-            <img src="usinagem01.png" className="d-block w-100" alt="Qualidade e Inovação em Soluções de Soldagem" />
+            <img src="usinagem01.webp" className="d-block w-100" alt="Qualidade e Inovação em Soluções de Soldagem" />
             <div className={styles.textcarousel}>
               <h5 className={styles.textcarouselson}>
                 Compromisso Inabalável com a <span className='fst-italic break'>Excelência em Nossos Produtos</span>
