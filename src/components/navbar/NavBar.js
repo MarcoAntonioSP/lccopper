@@ -26,7 +26,7 @@ const NavBar = () => {
   const navItems = [
     { href: '/', label: 'Início', icon: <FaHome /> },
     { href: '/quemsomos', label: 'Quem Somos', icon: <FaInfoCircle /> },
-    { href: '/servicos', label: 'Serviços', icon: <FaHandshake /> },
+    { href: '/produtos', label: 'Produtos', icon: <FaHandshake /> },
     { href: '/trabalheconosco', label: 'Trabalhe na LC Copper', icon: <FaBriefcase /> },
     { href: '/contato', label: 'Contato', icon: <FaEnvelope /> },
   ];
