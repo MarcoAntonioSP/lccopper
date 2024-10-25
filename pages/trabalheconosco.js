@@ -7,6 +7,7 @@ import NavBar from "../src/components/navbar/NavBar";
 import Footer from "../src/components/footer/Footer";
 import styles from './trabalhe.module.css';
 import BannerOneimg from "../src/components/banneronepages/BannerOneimg";
+import CareerOpportunity from "../src/components/carrear/CareerOpportunity";
 
 export default function Vagas() {
     const [vagasCdt, setVagasCdt] = useState([]);
@@ -122,7 +123,7 @@ export default function Vagas() {
             </form>
 
 
-
+            <CareerOpportunity />
             <Footer />
         </div>
     );

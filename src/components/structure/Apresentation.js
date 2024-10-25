@@ -22,7 +22,7 @@ export default function Apresentation() {
           {/* Imagem ficará oculta em dispositivos móveis com "d-none d-md-block" */}
           <Image
             className={`${styles.imgleft} img-fluid`}
-            src="/trabalhe01.jpeg"
+            src="/trabalhe01.webp"
             alt="Logo lccopper"
             width={600}
             height={800}
