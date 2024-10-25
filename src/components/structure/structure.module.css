@@ -53,12 +53,12 @@
   background-position: center; /* Para centralizar a imagem na div */
 }
 .imag2 {
-  background-image: url(/images/fundicaoim.png);
+  background-image: url("../../../public/images/fundicao.webp");
   background-size: cover; /* Para ajustar a imagem ao tamanho da div */
   background-position: center; /* Para centralizar a imagem na div */
 }
 .imag3 {
-  background-image: url(/usinagem01.webp);
+  background-image: url("../../../public/usinagem01.webp");
   background-size: cover; /* Para ajustar a imagem ao tamanho da div */
   background-position: center; /* Para centralizar a imagem na div */
 }
