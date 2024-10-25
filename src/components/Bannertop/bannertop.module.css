@@ -1,7 +1,5 @@
-
 .CarouselItem1 {
     position: relative;
-
 }
 
 .textcarousel {
@@ -23,29 +21,7 @@
     margin-top: -35%;
     font-size: 24px;
     color: white;
-    width: 70VW;
-}
-
-.textcarouselson3 {
-    font-size: 30px;
-    color: white; 
-}
-.textcarouselson3 button {
-    color: white;
-    font-size: 30px;
-}
-
-.textcarouselson4 {
-    font-size: 30px;
-    color: #198754;
-}
-
-.textcarouselson4 button{
-    color: white;
-    font-size: 30px;
-}
-.witr_btn {
-    background-color: blue;
+    width: 70vw; /* Corrigido para minúsculas */
 }
 
 .buttonsbanner {
@@ -55,23 +31,13 @@
     margin-top: -27%;
     z-index: 10;
 }
-.listbutton{
-    gap: 2 em;
+
+.listbutton {
+    gap: 2em; /* Corrigido para remover espaço extra */
     display: flex;
     flex-direction: row;
 }
 
-.textItem1 {
-    position: absolute;
-    color: white;
-    top: 40%;
-    left: 10%;
-    background-color: rgba(255, 255, 255, 0.315);
-    border-radius: 5px;
-    width: 500px;
-    height: 250px;
-}
-/*------estilos-carousel--------- */
 .my-carousel {
     height: 800px;
     overflow: hidden;
@@ -85,13 +51,8 @@
 @media (max-width: 948px) {
     .my-carousel {
         height: 280px;
-        /* Altura para telas menores */
     }
 
-    .textcarousel {
-        display: flex;
-        flex-direction: column;
-    }
     .textcarouselson {
         font-size: 50px;
         margin-top: -70%;
@@ -101,26 +62,17 @@
         font-size: 18px;
         margin-top: -28%;
     }
+
     .buttonsbanner {
-        position: absolute;
-        width: 800px;
-        height: 200px;
         margin-top: -14%;
-        z-index: 10;
     }
 }
 
 @media (max-width: 613px) {
     .my-carousel {
         height: 280px;
-        /* Altura para telas menores */
     }
 
-    .textcarousel {
-        display: flex;
-        flex-direction: column;
-        
-    }
     .textcarouselson {
         font-size: 30px;
         margin-top: -72%;
@@ -130,28 +82,13 @@
         font-size: 14px;
         margin-top: -32%;
     }
+
     .buttonsbanner {
-        position: absolute;
         width: 400px;
-        height: 200px;
-        margin-top: -14%;
         margin-left: -32px;
-        z-index: 10;
     }
-    .HeaderNav{
-        margin-top: 150px;
-    }
-    .top {
-       height:  40px;
-       font-size: 10.5px;
-    }
-    .textcarouselson3 button {
-        color: white;
-        font-size: 15px;
-    }
-    .textcarouselson4 button {
-        color: white;
-        font-size: 15px;
-    }
-    
+}
+
+.HeaderNav {
+    margin-top: 150px;
 }
