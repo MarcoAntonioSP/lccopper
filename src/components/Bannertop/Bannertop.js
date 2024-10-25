@@ -9,7 +9,7 @@ export default function Bannertop() {
         <div className="carousel-inner">
 
           <div className="carousel-item active">
-            <img src="home01.png" className="d-block w-100" alt="Qualidade e Inovação em Soluções de Soldagem" />
+            <img src="home01.webp" className="d-block w-100" alt="Qualidade e Inovação em Soluções de Soldagem" />
             <div className={styles.textcarousel}>
               <h5 className={styles.textcarouselson}>
                 Qualidade e Inovação em Soluções de <span className='fst-italic break'>Soldagem para a Indústria</span>
@@ -36,7 +36,7 @@ export default function Bannertop() {
           </div>
 
           <div className="carousel-item">
-            <img src="trabalhe01.jpeg" className="d-block w-100" alt="Qualidade e Inovação em Soluções de Soldagem" />
+            <img src="trabalhe01.webp" className="d-block w-100" alt="Qualidade e Inovação em Soluções de Soldagem" />
             <div className={styles.textcarousel}>
               <h5 className={styles.textcarouselson}>
                 Experiência de Quase 25 Anos em <span className='fst-italic break'>Reposição de Solda e Usinagem</span>
