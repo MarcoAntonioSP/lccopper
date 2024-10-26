@@ -11,10 +11,9 @@ export default function Faqitens () {
                 <div className="row justify-content-around align-items-center">
                     <div className="col-8 col-md-5 text-center">
                         <Image 
-                            src="/historia02.png" 
+                            src="/historia02.webp" 
                             className={`${styles.customImgFaq} img-responsive`}
                             alt="Imagem de uma linha de montagem"
-                            layout="responsive"
                             width={600}
                             height={400}
                         />

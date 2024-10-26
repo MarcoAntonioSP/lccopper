@@ -12,7 +12,7 @@ export default function Bannertop() {
         const nextButton = carouselRef.current.querySelector('.carousel-control-next');
         nextButton.click(); // Simula o clique no botão "próximo"
       }
-    }, 4000); // Troca a cada 3 segundos
+    }, 7000); // Troca a cada 4 segundos
 
     return () => clearInterval(intervalId); // Limpa o intervalo ao desmontar o componente
   }, []);
@@ -34,7 +34,7 @@ export default function Bannertop() {
                 <p className={styles.textcarouselson2}>
                   {index === 0 && "Transforme sua produção com nossas soluções de solda de alta performance. Junte-se aos líderes do setor!"}
                   {index === 1 && "Somos o parceiro ideal para sua indústria automotiva. Solicite um orçamento e descubra!"}
-                  {index === 2 && "Somos o parceiro ideal para sua indústria automotiva. Solicite um orçamento e descubra!"}
+                  {index === 2 && "Estamos prontos para atender suas necessidades. Entre em contato!"}
                 </p>
                 <div className={styles.buttonsbanner}>
                   <ul className={styles.listbutton}>
@@ -57,6 +57,14 @@ export default function Bannertop() {
                       <li> 
                         <Link href="/produtos" rel="noopener noreferrer">
                           <button type="button" className="btn btn-lg btn-primary">Conheça Nossas Soluções</button>
+                        </Link>
+                      </li>
+                    )}
+                    {/* Novo botão de chamada para ação */}
+                    {index === 2 && (
+                      <li>
+                        <Link className={`btn btn-lg me-2 ${styles.ctaButton}`} href="/contato" rel="noopener noreferrer">
+                            Entre em Contato                    
                         </Link>
                       </li>
                     )}

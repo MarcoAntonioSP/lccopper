@@ -13,41 +13,13 @@
 }
 
 .stripContainer {
-    position: absolute;
-    top: 50%; /* Centraliza verticalmente */
-    left: 0;
-    width: 100%;
+    width: 1000%;
     height: 100%;
-    overflow: hidden;
-    pointer-events: none; /* Impede interações com as faixas */
+    margin-left: 200px;
 }
-
-.strip {
-    position: absolute;
-    width: 100%; /* Largura total para as faixas */
-    height: 10%; /* Altura da faixa */
-    background-color: rgba(255, 204, 0, 0.7); /* Cor das faixas */
-    animation: move 10s linear infinite; /* Animação contínua */
+.customFontSize {
+    margin-top: -20px;
 }
-
-.strip:nth-child(odd) {
-    top: -10%; /* Coloca as faixas ímpares acima da tela */
-}
-
-.strip:nth-child(even) {
-    top: 10%; /* Coloca as faixas pares abaixo da tela */
-}
-
-@keyframes move {
-    0% {
-        transform: translateY(-100%); /* Começa fora da tela acima */
-    }
-    100% {
-        transform: translateY(100%); /* Move para fora da tela abaixo */
-    }
-}
-
-/* Restante do CSS permanece o mesmo */
 
 .footer {
     margin-top: -80px;
@@ -65,4 +37,10 @@
 
 .cols3 h1 {
     font-size: 5rem;
+}
+
+@media (max-width: 767px) { 
+    .customFontSize {
+        margin-top: 0px;
+    }
 }

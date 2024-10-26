@@ -1,4 +1,4 @@
-'use client'; 
+'use client';
 
 import React, { useEffect, useRef, useState } from "react";
 import Image from 'next/image';
@@ -64,11 +64,6 @@ export default function Section1() {
 
     return (
         <div ref={sectionRef} className={`${styles.section1} container-fluid`}>
-            <div className={styles.stripContainer}>
-                {[...Array(10)].map((_, index) => (
-                    <div key={index} className={styles.strip}></div>
-                ))}
-            </div>
             <div className='row'>
                 <div className='col-12 mt-4 text-center'>
                     <h1 className='text-primary fw-bold'>Nossa Missão</h1>
@@ -94,7 +89,7 @@ export default function Section1() {
                             height={300}
                         />
                         <h1 className={`text-primary position-absolute top-50 start-50 translate-middle ${styles.customFontSize}`}>
-                            {designValue}% 
+                            {designValue}%
                         </h1>
                         <h2 className='mt-1'>Precisão em Soldagem</h2>
                     </div>
@@ -107,7 +102,7 @@ export default function Section1() {
                             height={300}
                         />
                         <h1 className={`text-primary position-absolute top-50 start-50 translate-middle ${styles.customFontSize}`}>
-                            {flexibilityValue}% 
+                            {flexibilityValue}%
                         </h1>
                         <h2 className='mt-1'>Flexibilidade em Processos</h2>
                     </div>
@@ -120,7 +115,7 @@ export default function Section1() {
                             height={300}
                         />
                         <h1 className={`text-primary position-absolute top-50 start-50 translate-middle ${styles.customFontSize}`}>
-                            {responseRateValue}% 
+                            {responseRateValue}%
                         </h1>
                         <h2 className='mt-1'>Agilidade no Atendimento</h2>
                     </div>

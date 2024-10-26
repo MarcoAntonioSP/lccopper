@@ -19,7 +19,6 @@ export default function Apresentation() {
     >
       <div className="row align-items-center justify-content-center">
         <div className="col-md-6 d-none d-md-block text-center">
-          {/* Imagem ficará oculta em dispositivos móveis com "d-none d-md-block" */}
           <Image
             className={`${styles.imgleft} img-fluid`}
             src="/trabalhe01.webp"
