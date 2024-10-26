@@ -3,13 +3,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';   
 
-import { FaBars, FaTimes, FaHome, FaInfoCircle, FaHandshake, FaEnvelope, FaPhone, FaWhatsapp, FaBriefcase } from 'react-icons/fa';
+import { FaBars, FaTimes, FaHome, FaInfoCircle, FaBox, FaEnvelope, FaPhone, FaWhatsapp, FaBriefcase } from 'react-icons/fa'; // Substituindo FaHandshake por FaBox
 import styles from './navbar.module.css';
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const   
- [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -28,7 +27,7 @@ export default function NavBar() {
   const navItems = [
     { href: '/', label: 'Início', icon: <FaHome /> },
     { href: '/quemsomos', label: 'Quem Somos', icon: <FaInfoCircle /> },
-    { href: '/produtos', label: 'Produtos', icon: <FaHandshake /> },
+    { href: '/produtos', label: 'Produtos', icon: <FaBox /> }, // Substituindo FaHandshake por FaBox
     { href: '/trabalheconosco', label: 'Trabalhe na LC Copper', icon: <FaBriefcase /> },
     { href: '/contato', label: 'Contato', icon: <FaEnvelope /> },
   ];
@@ -50,16 +49,16 @@ export default function NavBar() {
         </div>
       </div>
       <div className={`${styles.navContainer} ${scrolled ? styles.scrolled : ''}`}>
-      <Link href="/" legacyBehavior>
-        <a className={styles.logo}>
-          <Image
-            src="/logo01.png"
-            alt="LC Copper Logo"
-            width={220}
-            height={40}
-          />
-        </a>
-      </Link>
+        <Link href="/" legacyBehavior>
+          <a className={styles.logo}>
+            <Image
+              src="/logo01.png"
+              alt="LC Copper Logo"
+              width={220}
+              height={40}
+            />
+          </a>
+        </Link>
         <button
           className={styles.menuButton}
           onClick={toggleMenu}
