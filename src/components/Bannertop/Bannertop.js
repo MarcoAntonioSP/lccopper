@@ -7,24 +7,31 @@ export default function Bannertop() {
   const carouselRef = useRef(null);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      if (carouselRef.current) {
-        const nextButton = carouselRef.current.querySelector('.carousel-control-next');
-        nextButton.click(); // Simula o clique no botão "próximo"
-      }
-    }, 7000); // Troca a cada 4 segundos
+    // Importando o Bootstrap apenas se necessário
+    const bootstrap = require('bootstrap/dist/js/bootstrap.bundle.min.js');
 
-    return () => clearInterval(intervalId); // Limpa o intervalo ao desmontar o componente
+    const carousel = new bootstrap.Carousel(carouselRef.current, {
+      interval: 6000, // Trocar a cada 6 segundos
+      pause: false, // Para não pausar ao passar o mouse
+    });
+
+    return () => {
+      carousel.dispose(); // Limpa a instância do carrossel ao desmontar
+    };
   }, []);
 
   return ( 
-    <div className={styles.HeaderNav} ref={carouselRef}> 
-      <div id="carouselExampleCaptions" className={`carousel slide my-carousel`} data-bs-ride="false"> 
+    <div className={styles.HeaderNav}>
+      <div 
+        id="carouselExampleCaptions" 
+        className={`carousel slide my-carousel`} 
+        data-bs-ride="carousel" // Certifique-se de que este atributo está presente
+        ref={carouselRef} 
+      > 
         <div className="carousel-inner"> 
-
           {['home01.webp', 'trabalhe01.webp', 'usinagem01.png'].map((imgSrc, index) => (
             <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={imgSrc}>
-              <img src={imgSrc} className="d-block w-100" alt="Qualidade e Inovação em Soluções de Soldagem" loading="lazy" />
+              <img src={imgSrc} className="d-block w-100" alt="Descrição da imagem" loading="lazy" />
               <div className={styles.textcarousel}>
                 <h5 className={styles.textcarouselson}>
                   {index === 0 && "Qualidade e Inovação em Soluções de Soldagem para a Indústria"}
@@ -60,7 +67,6 @@ export default function Bannertop() {
                         </Link>
                       </li>
                     )}
-                    {/* Novo botão de chamada para ação */}
                     {index === 2 && (
                       <li>
                         <Link className={`btn btn-lg mb-5 ${styles.ctaButton}`} href="/contato" rel="noopener noreferrer">
@@ -73,7 +79,6 @@ export default function Bannertop() {
               </div>
             </div>
           ))}
-
         </div>
 
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
