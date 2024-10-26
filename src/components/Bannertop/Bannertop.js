@@ -22,7 +22,7 @@ export default function Bannertop() {
       <div id="carouselExampleCaptions" className={`carousel slide my-carousel`} data-bs-ride="false"> 
         <div className="carousel-inner"> 
 
-          {['home01.webp', 'trabalhe01.webp', 'usinagem01.webp'].map((imgSrc, index) => (
+          {['home01.webp', 'trabalhe01.webp', 'usinagem01.png'].map((imgSrc, index) => (
             <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={imgSrc}>
               <img src={imgSrc} className="d-block w-100" alt="Qualidade e Inovação em Soluções de Soldagem" loading="lazy" />
               <div className={styles.textcarousel}>
@@ -63,7 +63,7 @@ export default function Bannertop() {
                     {/* Novo botão de chamada para ação */}
                     {index === 2 && (
                       <li>
-                        <Link className={`btn btn-lg me-2 ${styles.ctaButton}`} href="/contato" rel="noopener noreferrer">
+                        <Link className={`btn btn-lg mb-5 ${styles.ctaButton}`} href="/contato" rel="noopener noreferrer">
                             Entre em Contato                    
                         </Link>
                       </li>

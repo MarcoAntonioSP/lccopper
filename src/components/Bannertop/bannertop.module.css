@@ -1,187 +1,214 @@
-
 .HeaderNav {
-   max-height: 800px;
-   overflow: hidden;
+  max-height: 800px;
+  overflow: hidden;
 }
+
 .CarouselItem1 {
-    position: relative;
+  position: relative;
 }
 
 .textcarousel {
-    position: relative;
-    margin-left: 5%;
+  position: relative;
+  margin-left: 5%;
 }
 
 .textcarouselson {
-    width: 80vw;
-    font-size: 50px;
-    position: absolute;
-    margin-top: -54%;
-    z-index: 15;
-    color: white;
+  width: 80vw;
+  font-size: 50px;
+  position: absolute;
+  margin-top: -54%;
+  z-index: 15;
+  color: white;
 }
 
 .textcarouselson2 {
-    position: absolute;
-    margin-top: -35%;
-    font-size: 24px;
-    color: white;
-    width: 70vw; /* Corrigido para minúsculas */
+  position: absolute;
+  margin-top: -35%;
+  font-size: 24px;
+  color: white;
+  width: 70vw;
+  /* Corrigido para minúsculas */
 }
 
 .buttonsbanner {
-    position: absolute;
-    width: 800px;
-    height: 200px;
-    margin-top: -27%;
-    z-index: 10;
+  position: absolute;
+  width: 800px;
+  height: 200px;
+  margin-top: -27%;
+  z-index: 10;
 }
 
 .listbutton {
-    gap: 2em; /* Corrigido para remover espaço extra */
-    display: flex;
-    flex-direction: row;
+  gap: 2em;
+  /* Corrigido para remover espaço extra */
+  display: flex;
+  flex-direction: row;
 }
 
 .my-carousel {
-    height: 800px;
+  height: 800px;
 }
 
 .my-carousel .carousel-item img {
-    height: 100%;
-    object-fit: cover;
+  height: 100%;
+  object-fit: cover;
 }
+
 @media (max-width: 948px) {
-    .my-carousel {
-        height: 360px; /* 280px + 80px */
-    }
+  .my-carousel {
+    height: 360px;
+    /* 280px + 80px */
+  }
 
-    .textcarouselson {
-        font-size: 50px;
-        margin-top: -70%;
-    }
+  .textcarouselson {
+    font-size: 50px;
+    margin-top: -70%;
+  }
 
-    .textcarouselson2 {
-        font-size: 18px;
-        margin-top: -28%;
-    }
+  .textcarouselson2 {
+    font-size: 18px;
+    margin-top: -28%;
+  }
 
-    .buttonsbanner {
-        margin-top: -14%;
-    }
+  .buttonsbanner {
+    margin-top: -14%;
+  }
 }
 
 @media (max-width: 613px) {
-    .my-carousel {
-        height: 360px; /* 280px + 80px */
-    }
+  .my-carousel {
+    height: 360px;
+  }
 
-    .textcarouselson {
-        font-size: 30px;
-        margin-top: -72%;
-    }
+  .textcarouselson {
+    font-size: 30px;
+    margin-top: -72%;
+  }
 
-    .textcarouselson2 {
-        font-size: 12px;
-        margin-top: -32%;
-    }
+  .textcarouselson2 {
+    font-size: 12px;
+    margin-top: -32%;
+  }
 
-    .buttonsbanner {
-        width: 400px;
-        margin-left: -32px;
-    }
-    .buttonsbanner {
-        position: absolute;
-        width: 800px;
-        height: 200px;
-        margin-top: -14%;
-        z-index: 10;
-    }
+  .buttonsbanner {
+    width: 400px;
+    margin-left: -32px;
+  }
+
+  .buttonsbanner {
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    margin-top: -14%;
+    z-index: 10;
+  }
+}
+@media (max-width: 420px) {
+  .ctaButton {
+    margin-top: -22px;
+  }
+  .HeaderNav {
+    height: 280px;
+    overflow: hidden;
+  }
 }
 
+
 .HeaderNav {
-    margin-top: 130px;
+  margin-top: 130px;
 }
 
 .callToActionButton {
-    background-color: #FF8C00; /* Laranja vibrante */
-    border-color: #FF8C00;
-    color: white;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-    padding: 10px 20px; /* Adiciona espaçamento interno ao botão */
-    font-size: 16px; /* Tamanho da fonte */
-    border: none; /* Remove a borda padrão */
-    border-radius: 5px; /* Bordas arredondadas */
-  }
-  
-  .callToActionButton:hover {
-    background-color: #0056b3; /* Azul escuro ao hover */
-    border-color: #0056b3;
-    cursor: pointer; /* Altera o cursor ao passar o mouse */
-  }
-  
-  .ctaButton {
-    background-color: #FF8C00; /* Laranja vibrante */
-    border-color: #FF8C00;
-    color: white;
-    font-weight: bold;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 8px; /* Para bordas arredondadas */
-  }
-  
-  .ctaButton:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
+  background-color: #FF8C00;
+  /* Laranja vibrante */
+  border-color: #FF8C00;
+  color: white;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  padding: 10px 20px;
+  /* Adiciona espaçamento interno ao botão */
+  font-size: 16px;
+  /* Tamanho da fonte */
+  border: none;
+  /* Remove a borda padrão */
+  border-radius: 5px;
+  /* Bordas arredondadas */
+}
+
+.callToActionButton:hover {
+  background-color: #0056b3;
+  /* Azul escuro ao hover */
+  border-color: #0056b3;
+  cursor: pointer;
+  /* Altera o cursor ao passar o mouse */
+}
+
+.ctaButton {
+  background-color: #FF8C00;
+  /* Laranja vibrante */
+  border-color: #FF8C00;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  /* Para bordas arredondadas */
+}
+
+.ctaButton:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg,
       transparent,
       rgba(255, 255, 255, 0.3),
-      transparent
-    );
-    transition: all 0.6s;
+      transparent);
+  transition: all 0.6s;
+}
+
+.ctaButton:hover:before {
+  left: 100%;
+}
+
+.ctaButton:hover,
+.ctaButton:focus {
+  background-color: #0056b3;
+  /* Azul escuro ao hover */
+  border-color: #0056b3;
+  color: white;
+  transform: translateY(-2px) scale(1.05);
+  /* Efeito de aumentar */
+  box-shadow: 0 4px 8px rgba(0, 86, 179, 0.3);
+}
+
+.ctaButton:active {
+  transform: translateY(1px) scale(0.95);
+  /* Efeito de pressionar */
+  box-shadow: 0 2px 4px rgba(0, 86, 179, 0.3);
+}
+
+/* Adicionando animação de pulsar */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  
-  .ctaButton:hover:before {
-    left: 100%;
+
+  50% {
+    transform: scale(1.05);
   }
-  
-  .ctaButton:hover,
-  .ctaButton:focus {
-    background-color: #0056b3; /* Azul escuro ao hover */
-    border-color: #0056b3;
-    color: white;
-    transform: translateY(-2px) scale(1.05); /* Efeito de aumentar */
-    box-shadow: 0 4px 8px rgba(0, 86, 179, 0.3);
+
+  100% {
+    transform: scale(1);
   }
-  
-  .ctaButton:active {
-    transform: translateY(1px) scale(0.95); /* Efeito de pressionar */
-    box-shadow: 0 2px 4px rgba(0, 86, 179, 0.3);
-  }
-  
-  /* Adicionando animação de pulsar */
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .ctaButton {
-    animation: pulse 2s infinite; /* Pulsar continuamente */
-  }
-  
+}
+
+.ctaButton {
+  animation: pulse 2s infinite;
+  /* Pulsar continuamente */
+}
