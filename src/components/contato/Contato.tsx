@@ -221,7 +221,7 @@ export default function Contato() {
           <strong>Telefones:</strong> <br />
           (11) 4676-0398 <br />
           (11) 94023-8626 <br />
-          (11) 99601-6574
+          (11) 99601-6574 
         </p>
         <p className="text-center">
           <strong>E-mail:</strong> <br />
