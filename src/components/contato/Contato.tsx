@@ -112,7 +112,7 @@ export default function Contato() {
     } catch (error) {
       setFormStatus({
         success: false,
-        message: `Erro ao submeter o formulário: ${error.message}`,
+        message: `Erro ao submeter o formulário: ${(error as Error).message}`,
       });
     }
   };
